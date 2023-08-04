@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 344116863f3dbb54ea130d849e815ec5, type: 3}
   m_Name: MonsterTruck_SO 40
   m_EditorClassIdentifier: 
-  truck_ID: 0
+  truck_ID: 39
   gurage: 0
   sprite: {fileID: 0}
   Prefab: {fileID: 0}
