@@ -64,7 +64,7 @@ public class CarController : MonoBehaviour {
 	{
 		Vector3 posCamera;
 		posCamera = Camera.main.transform.position;
-		Camera.main.transform.position = new Vector3 (posCamera.x, posCamera.y, - cameraDistance);
+		Camera.main.transform.position = new Vector3 (posCamera.x, posCamera.y,  cameraDistance);
 	}
 
 	void Start () { 
