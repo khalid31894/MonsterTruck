@@ -8,7 +8,7 @@ public class SplashUI_Controller : MonoBehaviour
     {
       
             PlayerPrefsManager.SetPrivacySplash(true);
-            SceneLoader.LoadScene(SceneLoader.Scenes.Scene3_Menu);
+            SceneLoader.LoadScene(SceneLoader.Scenes.Scene2_Menu);
     
     }
     public void PrivacyPolicy_Btn()

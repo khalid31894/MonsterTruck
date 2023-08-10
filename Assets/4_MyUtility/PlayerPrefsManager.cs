@@ -41,6 +41,23 @@ public static class PlayerPrefsManager //: MonoBehaviour
   
     }
     
+    ///////////////////////////////////////////////////////////////////
+    
+    public static void SetCurrentCanvas(int canvasNumber)
+    {
+        if (canvasNumber < 0 && canvasNumber > 5) { Debug.LogError("Canvas number out of range"); return; }
+
+        PlayerPrefs.SetInt(PlayerPrefsKeys.CurrentCanvas, canvasNumber);
+
+    }
+    public static int  GetCurrentCanvas()
+    {
+        return PlayerPrefs.GetInt(PlayerPrefsKeys.CurrentCanvas);
+    }
+
+    ////////////////////////////////////////////////////////////////
+    
+
 
 
 

@@ -9,8 +9,8 @@ public static class SceneLoader
     public  enum Scenes
     {
         Scene1_Splash,
-        Scene2_Game,
-        Scene3_Menu,
+        Scene2_Menu,
+        Scene3_Game,
         Scene4_Loading,
     }
 

@@ -32,7 +32,7 @@ public class Splash_Controller : MonoBehaviour
 
     private IEnumerator ChangeScene() {
         yield return new WaitForSeconds(SplashDelay);
-        SceneLoader.LoadScene(SceneLoader.Scenes.Scene3_Menu);
+        SceneLoader.LoadScene(SceneLoader.Scenes.Scene2_Menu);
     }
 
 

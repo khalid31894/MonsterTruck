@@ -12,5 +12,6 @@ public static class PlayerPrefsKeys
    
     public const string PrivacySplashAccept = "PrivacySplashAccept";
 
+    public const string CurrentCanvas = "CurrentCanvas";
 
 }
