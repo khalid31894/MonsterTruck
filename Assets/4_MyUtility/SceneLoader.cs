@@ -14,23 +14,17 @@ public static class SceneLoader
         Scene4_Loading,
     }
 
-
-
-
     private static Action onLoaderCallBack;
+
 
     public static void LoadScene(Scenes scene)
     {
-
         onLoaderCallBack = () =>
         {
             SceneManager.LoadScene(scene.ToString());
         };
-
-
         SceneManager.LoadScene(Scenes.Scene4_Loading.ToString());
     }
-
     public static void LoaderCallBack() { 
     
     if(onLoaderCallBack != null)
@@ -39,9 +33,5 @@ public static class SceneLoader
             onLoaderCallBack=null;
         }
     }
-
-
-
-
 }
 

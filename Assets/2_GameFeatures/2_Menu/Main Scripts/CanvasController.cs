@@ -37,6 +37,9 @@ public class CanvasController : MonoBehaviour
     }
 
     ////////////////////////////
+    
+
+
 
     public int currentCanvas = 0;
     public Canvas[] canvasArray= new Canvas[6];
@@ -67,5 +70,36 @@ public class CanvasController : MonoBehaviour
     {
         if (On_CanvasChanger_CallBack != null) { On_CanvasChanger_CallBack(SetCanvasNumber); On_CanvasChanger_CallBack = null; }
     }
+
+
+
+    ///////////////////////////////////////
+
+
+
+
+    private void Start()
+    {
+        IsGameSceneToMenuScene();
+    }
+
+    private void IsGameSceneToMenuScene()
+    {
+        if (PlayerPrefsManager.GetCurrentCanvas() ==3) //if paint btn was clicked in game play
+        {
+            canvasArray[5].GetComponent <Transform>().gameObject.SetActive(true); //active loading
+            canvasArray[0].GetComponent<Transform>().gameObject.SetActive(false); //main panel off 
+            canvasArray[3].GetComponent<Transform>().gameObject.SetActive(true);  //paint panel on
+          
+        }
+        else
+        {
+           
+        }
+
+    }
+
+
+
 
 }
