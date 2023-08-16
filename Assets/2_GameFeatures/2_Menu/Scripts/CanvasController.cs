@@ -43,34 +43,29 @@ public class CanvasController : MonoBehaviour
 
     public static Action <int> On_CanvasChanger_CallBack;
 
-    public int SetCanvasNumber=1;
+    public static  int SetCanvasNumber;
 
 
 
-    public void ChangeCanvas( int canvasNumber)
+    public void ChangeCanvas( int canvasNumber)  //Applied on All Btns which change panels
     {
         SetCanvasNumber = canvasNumber; //Static var for callback paramerter
 
         On_CanvasChanger_CallBack = (int canvasNumber) =>
         {
-            if (canvasArray == null) { Debug.LogError("Cavas number range should be 0 to 5"); return; };
+            if (canvasArray == null || canvasNumber<0 || canvasNumber>4) { Debug.LogError("Cavas number range should be 0 to 5"); return; };
             canvasArray[canvasNumber].GetComponent<Transform>().gameObject.SetActive(true);                                   //SetActive T Desired Canvas
             canvasArray[PlayerPrefsManager.GetCurrentCanvas()].GetComponent<Transform>().gameObject.SetActive(false);         //SetActive F Current Canvas
 
             PlayerPrefsManager.SetCurrentCanvas(SetCanvasNumber);
         };
-
-
         canvasArray[5].GetComponent<Transform>().gameObject.SetActive(true);
-
-
     }
 
 
     public static void CanvasChanger_CallBack()
     {
         if (On_CanvasChanger_CallBack != null) { On_CanvasChanger_CallBack(SetCanvasNumber); On_CanvasChanger_CallBack = null; }
-
     }
 
 }

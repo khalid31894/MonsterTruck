@@ -8,7 +8,7 @@ public class CanvasLoading : MonoBehaviour
     public float delay = 3;
 
 
-    private void Start()
+    public void OnEnable() 
     {
         StartCoroutine(Delay());
     }
