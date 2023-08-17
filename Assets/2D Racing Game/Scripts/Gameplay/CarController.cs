@@ -2,8 +2,9 @@
 using System.Collections; 
 
 
-public class CarController : MonoBehaviour { 
+public class CarController : MonoBehaviour {
 
+   public bool stop;
 
 	// Car rigidbody COM
 	public Transform centerOfMass;
@@ -107,8 +108,9 @@ public class CarController : MonoBehaviour {
 			motorPower = powerTemp;
 		
 		// Moving forward
-		if (Input.GetAxis ("Horizontal") > 0 || HoriTemp > 0) {
+		if (Input.GetAxis ("Horizontal") > 0 || HoriTemp > 0 && !stop) {
 
+			
 			// Add force to car back wheel
 			if(isGrounded)
 				motorBack.motorSpeed = Mathf.Lerp (motorBack.motorSpeed, -motorPower, Time.deltaTime * 1.4f);
