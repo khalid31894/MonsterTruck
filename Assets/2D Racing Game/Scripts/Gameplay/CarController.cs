@@ -5,9 +5,11 @@ using System.Collections;
 public class CarController : MonoBehaviour {
 
    public bool stop;
+	public static bool grounded;
+	public float JumpPower= 500;
 
-	// Car rigidbody COM
-	public Transform centerOfMass;
+    // Car rigidbody COM
+    public Transform centerOfMass;
 
 	// Wheel motor for drive the car based on wheelJoint 2D
 	JointMotor2D motorBack;  
@@ -285,4 +287,11 @@ public class CarController : MonoBehaviour {
 
 
 	}
+
+	public void Jump()
+	{
+		if (!grounded) return;
+        GetComponent<Rigidbody2D>().AddForce(transform.up * JumpPower, ForceMode2D.Impulse);
+    }
+
 }

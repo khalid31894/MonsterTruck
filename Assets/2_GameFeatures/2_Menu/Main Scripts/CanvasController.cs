@@ -57,8 +57,8 @@ public class CanvasController : MonoBehaviour
         On_CanvasChanger_CallBack = (int canvasNumber) =>
         {
             if (canvasArray == null || canvasNumber<0 || canvasNumber>4) { Debug.LogError("Cavas number range should be 0 to 5"); return; };
-            canvasArray[canvasNumber].GetComponent<Transform>().gameObject.SetActive(true);                                   //SetActive T Desired Canvas
             canvasArray[PlayerPrefsManager.GetCurrentCanvas()].GetComponent<Transform>().gameObject.SetActive(false);         //SetActive F Current Canvas
+            canvasArray[canvasNumber].GetComponent<Transform>().gameObject.SetActive(true);                                   //SetActive T Desired Canvas
 
             PlayerPrefsManager.SetCurrentCanvas(SetCanvasNumber);
         };

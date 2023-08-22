@@ -1,5 +1,5 @@
 using System;
-using UnityEditor.Build.Reporting;
+//using UnityEditor.Build.Reporting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -58,6 +58,15 @@ public static class PlayerPrefsManager //: MonoBehaviour
     ////////////////////////////////////////////////////////////////
     
 
+    public static  void SetCurrentGarage(int garageNumber)
+    {
+        PlayerPrefs.SetInt(PlayerPrefsKeys.CurrentGarage, garageNumber);
+    }
+
+    public static int GetCurrentGarage()
+    {
+        return PlayerPrefs.GetInt(PlayerPrefsKeys.CurrentGarage);
+    }
 
 
 
