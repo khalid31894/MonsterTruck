@@ -46,6 +46,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shapes:
   - showContents: 1
-    gamePrefab: {fileID: 9162915746916388796, guid: a5fe6365b67e52f41a5ad1286ab85ad4,
+    gamePrefab: {fileID: 4747324307877202263, guid: 5dfcc11890974fa4e979e9ddacafcb10,
       type: 3}
   lastSelectedShape: 0

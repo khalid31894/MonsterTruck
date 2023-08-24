@@ -110,7 +110,7 @@ namespace IndieStudio.DrawingAndColoring.Logic
         //	//AdsManager.instance.ShowAdvertisment (AdPackage.AdEvent.Event.ON_LOAD_GAME_SCENE);
         //}
 
-        [System.Obsolete]
+       // [System.Obsolete]
         public void ToolClickEvent (Tool tool)
 		{
 			if (tool == null) {
@@ -150,7 +150,7 @@ namespace IndieStudio.DrawingAndColoring.Logic
 			}
 		}
 
-        [System.Obsolete]
+        //[System.Obsolete]
         public void ToolContentClickEvent (ToolContent content)
 		{
 			//SoundManager.instance.PlayEffect_Instance(1);
@@ -263,7 +263,7 @@ namespace IndieStudio.DrawingAndColoring.Logic
         //	}
         //}
 
-        [System.Obsolete]
+        //[System.Obsolete]
         public void LoadAlbumScene ()
 		{
 			//CarController.ReadyForAd = true;

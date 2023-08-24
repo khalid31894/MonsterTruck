@@ -109,7 +109,7 @@ public class CarController : MonoBehaviour
 
         if (IsJump)
         {
-            AnimatorHandler.Instance.PlaySmile();
+          //  AnimatorHandler.Instance.PlaySmile();
            // SoundManager.instance.PlayEffect_Complete(15);
             GetComponent<Rigidbody2D>().AddForce(transform.up * JumpPower, ForceMode2D.Impulse);
             GameManager.instance.Jump.interactable = false;
@@ -132,6 +132,7 @@ public class CarController : MonoBehaviour
     {
         //if (isGrounded)
         //{
+        
         if (speed < 4.3f)
         {
             if (UseTirePBack)
@@ -150,7 +151,7 @@ public class CarController : MonoBehaviour
         }
         //}
         //else
-        //{
+        //{ 
         //    if (UseTirePBack)
         //            em[0].enabled = false;
         //        if (UseTirePF)
@@ -223,7 +224,7 @@ public class CarController : MonoBehaviour
                                     //GameManager.instance.play.GetComponent<Image>().DOFade(50, 2f).OnComplete(delegate
                                     //{
                                         //GameManager.instance.play.SetActive(false);
-                                        GameManager.instance.play.GetComponent<Animator>().enabled = false;
+                                       // GameManager.instance.play.GetComponent<Animator>().enabled = false;
                                         GameManager.instance.Jump.gameObject.SetActive(true);
                                     //});
                                 }

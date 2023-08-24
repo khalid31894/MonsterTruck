@@ -11,6 +11,14 @@ TagManager:
   - LoadingCamera
   - CoinTrigger
   - Ground
+  - DontDestroy
+  - Wheel
+  - CharacterPart
+  - Springy
+  - Sticker
+  - Tool
+  - Group
+  - Line
   layers:
   - Default
   - TransparentFX
@@ -20,12 +28,12 @@ TagManager:
   - UI
   - 
   - 
-  - PostProcessing
-  - 
-  - 
-  - 
-  - 
-  - 
+  - LowCamera
+  - MiddleCamera
+  - TopCamera
+  - Layer Collision
+  - RenderLayer
+  - FrontLayer
   - 
   - 
   - 
@@ -47,4 +55,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Car
+    uniqueID: 4245289445
     locked: 0

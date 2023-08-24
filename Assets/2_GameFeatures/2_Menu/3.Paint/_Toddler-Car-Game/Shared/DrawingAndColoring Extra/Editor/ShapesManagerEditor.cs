@@ -28,12 +28,12 @@ namespace IndieStudio.DrawingAndColoring.DCEditor
 				EditorGUILayout.BeginHorizontal();
 				//GUI.backgroundColor = Colors.cyanColor;
 				EditorGUILayout.Separator();
-            //if(PrefabUtility.GetPrefabParent(shapesManager.gameObject)!=null)
+            //if (PrefabUtility.GetPrefabParent(shapesManager.gameObject) != null)
 
-            //if (GUILayout.Button("Apply", GUILayout.Width(70), GUILayout.Height(30), GUILayout.ExpandWidth(false)))
-            //{
-            //    PrefabUtility.ApplyPrefabInstance(shapesManager.gameObject, InteractionMode.AutomatedAction);
-            //}
+                if (GUILayout.Button("Apply", GUILayout.Width(70), GUILayout.Height(30), GUILayout.ExpandWidth(false)))
+                {
+                    PrefabUtility.ApplyPrefabInstance(shapesManager.gameObject, InteractionMode.AutomatedAction);
+                }
             //GUI.backgroundColor = Colors.whiteColor;
             EditorGUILayout.EndHorizontal();
             #endif

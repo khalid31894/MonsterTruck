@@ -29,7 +29,7 @@ public class Grounded : MonoBehaviour
                 {
                     Car_Handler.instance.controller.IsJump = true;
                     GameManager.instance.Jump.interactable = true;
-                    AnimatorHandler.Instance.PlayLanded();
+                   // AnimatorHandler.Instance.PlayLanded();
                 }
             }
         }
