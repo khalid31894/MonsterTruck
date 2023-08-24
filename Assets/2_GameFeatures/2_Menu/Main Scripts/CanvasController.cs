@@ -42,7 +42,7 @@ public class CanvasController : MonoBehaviour
 
 
     public int currentCanvas = 0;
-    public Canvas[] canvasArray= new Canvas[6];
+    public GameObject [] canvasArray= new GameObject[6];
 
     public static Action <int> On_CanvasChanger_CallBack;
 
@@ -57,12 +57,12 @@ public class CanvasController : MonoBehaviour
         On_CanvasChanger_CallBack = (int canvasNumber) =>
         {
             if (canvasArray == null || canvasNumber<0 || canvasNumber>4) { Debug.LogError("Cavas number range should be 0 to 5"); return; };
-            canvasArray[PlayerPrefsManager.GetCurrentCanvas()].GetComponent<Transform>().gameObject.SetActive(false);         //SetActive F Current Canvas
-            canvasArray[canvasNumber].GetComponent<Transform>().gameObject.SetActive(true);                                   //SetActive T Desired Canvas
+            canvasArray[PlayerPrefsManager.GetCurrentCanvas()].SetActive(false);         //SetActive F Current Canvas
+            canvasArray[canvasNumber].SetActive(true);                                   //SetActive T Desired Canvas
 
             PlayerPrefsManager.SetCurrentCanvas(SetCanvasNumber);
         };
-        canvasArray[5].GetComponent<Transform>().gameObject.SetActive(true);
+        canvasArray[5].SetActive(true);
     }
 
 
@@ -87,9 +87,9 @@ public class CanvasController : MonoBehaviour
     {
         if (PlayerPrefsManager.GetCurrentCanvas() ==3) //if paint btn was clicked in game play
         {
-            canvasArray[5].GetComponent <Transform>().gameObject.SetActive(true); //active loading
-            canvasArray[0].GetComponent<Transform>().gameObject.SetActive(false); //main panel off 
-            canvasArray[3].GetComponent<Transform>().gameObject.SetActive(true);  //paint panel on
+            canvasArray[5].SetActive(true); //active loading
+            canvasArray[0].SetActive(false); //main panel off 
+            canvasArray[3].SetActive(true);  //paint panel on
           
         }
         else

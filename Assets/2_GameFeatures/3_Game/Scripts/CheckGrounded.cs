@@ -8,7 +8,7 @@ public class CheckGrounded : MonoBehaviour
     {
         if (collision.CompareTag("Ground"))
         {
-        CarController.grounded = true;
+        //CarController.grounded = true;
         }
     }
 
@@ -16,7 +16,7 @@ public class CheckGrounded : MonoBehaviour
     {
         if (collision.CompareTag("Ground"))
         {
-            CarController.grounded = false;
+            //CarController.grounded = false;
         }
     }
 }
