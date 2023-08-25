@@ -5260,7 +5260,7 @@ MonoBehaviour:
   useSmoke: 0
   smoke: {fileID: 0}
   smokeTargetSpeed: 17
-  cameraDistance: -27
+  cameraDistance: 27
   forward: 0
   backward: 0
   ringF: 0
@@ -5808,9 +5808,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.000061035156, y: 0}
+  m_Offset: {x: 0.00006105599, y: -0.009555262}
   serializedVersion: 2
-  m_Radius: 1.0750002
+  m_Radius: 0.8996868
 --- !u!50 &8671441864627718034
 Rigidbody2D:
   serializedVersion: 4
@@ -10866,7 +10866,7 @@ Camera:
   m_GameObject: {fileID: 7716295123411104554}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 2
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -11026,9 +11026,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.000030517578}
+  m_Offset: {x: 0, y: 0.0039673336}
   serializedVersion: 2
-  m_Radius: 1.0750002
+  m_Radius: 0.8820984
 --- !u!50 &9102107812550023040
 Rigidbody2D:
   serializedVersion: 4

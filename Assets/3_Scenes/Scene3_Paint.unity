@@ -1434,7 +1434,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1801472729}
         m_TargetAssemblyTypeName: IndieStudio.DrawingAndColoring.Logic.UIEvents,
           Assembly-CSharp
         m_MethodName: ToolClickEvent
@@ -5122,7 +5122,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1801472729}
         m_TargetAssemblyTypeName: IndieStudio.DrawingAndColoring.Logic.UIEvents,
           Assembly-CSharp
         m_MethodName: ToolClickEvent
@@ -6162,7 +6162,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1801472729}
         m_TargetAssemblyTypeName: IndieStudio.DrawingAndColoring.Logic.UIEvents,
           Assembly-CSharp
         m_MethodName: ToolClickEvent
@@ -8921,7 +8921,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1801472729}
         m_TargetAssemblyTypeName: IndieStudio.DrawingAndColoring.Logic.UIEvents,
           Assembly-CSharp
         m_MethodName: ToolClickEvent
@@ -9496,6 +9496,7 @@ GameObject:
   - component: {fileID: 678919391}
   - component: {fileID: 678919392}
   - component: {fileID: 678919393}
+  - component: {fileID: 678919394}
   m_Layer: 10
   m_Name: UICanvas
   m_TagString: Untagged
@@ -10048,6 +10049,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   show: 0
   dis_Show: 0
+--- !u!114 &678919394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678919382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d874c1f725090c342aae8fd782075a8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &679774858
 GameObject:
   m_ObjectHideFlags: 0
@@ -19817,7 +19830,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1104720903}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -19930,7 +19943,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1104720903}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5111c2e5e1ac77d49b48547a8dab5e2a, type: 3}
   m_Name: 
@@ -20835,7 +20848,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1123451282}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -20914,7 +20927,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1123451282}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5111c2e5e1ac77d49b48547a8dab5e2a, type: 3}
   m_Name: 
@@ -21091,7 +21104,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1147509110}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5111c2e5e1ac77d49b48547a8dab5e2a, type: 3}
   m_Name: 
@@ -21105,7 +21118,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1147509110}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -24744,7 +24757,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1801472729}
         m_TargetAssemblyTypeName: IndieStudio.DrawingAndColoring.Logic.UIEvents,
           Assembly-CSharp
         m_MethodName: ToolClickEvent
@@ -30157,10 +30170,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 678919394}
+        m_TargetAssemblyTypeName: PaintSecUI, Assembly-CSharp
+        m_MethodName: GoToTrackSelection
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -34194,7 +34207,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1801472729}
         m_TargetAssemblyTypeName: IndieStudio.DrawingAndColoring.Logic.UIEvents,
           Assembly-CSharp
         m_MethodName: ToolClickEvent
@@ -34279,7 +34292,7 @@ MonoBehaviour:
   enableContentsShadow: 1
   repeatedTexture: 0
   drawMaterial: {fileID: 2100000, guid: bf12147c1f604ad4eb53d18d25d3761a, type: 2}
-  lineThicknessFactor: 1
+  lineThicknessFactor: 2
   lineTextureMode: 0
   showContents: 1
   sliderContentsCellSize: {x: 90, y: 115}
@@ -34383,7 +34396,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1801472729}
         m_TargetAssemblyTypeName: IndieStudio.DrawingAndColoring.Logic.UIEvents,
           Assembly-CSharp
         m_MethodName: ToolClickEvent
@@ -34481,7 +34494,7 @@ MonoBehaviour:
   enableContentsShadow: 0
   repeatedTexture: 1
   drawMaterial: {fileID: 2100000, guid: bf12147c1f604ad4eb53d18d25d3761a, type: 2}
-  lineThicknessFactor: 4
+  lineThicknessFactor: 0.5
   lineTextureMode: 1
   showContents: 1
   sliderContentsCellSize: {x: 90, y: 115}
@@ -37316,7 +37329,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2034147696}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -37402,7 +37415,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2034147696}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5111c2e5e1ac77d49b48547a8dab5e2a, type: 3}
   m_Name: 
@@ -38374,7 +38387,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2120649617}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -38481,7 +38494,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2120649617}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5111c2e5e1ac77d49b48547a8dab5e2a, type: 3}
   m_Name: 

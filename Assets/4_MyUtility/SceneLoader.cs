@@ -10,8 +10,9 @@ public static class SceneLoader
     {
         Scene1_Splash,
         Scene2_Menu,
-        Scene3_Game,
-        Scene4_Loading,
+        Scene3_Paint,
+        Scene4_Game,
+        Scene5_Loading,
     }
 
     private static Action onLoaderCallBack;
@@ -23,7 +24,7 @@ public static class SceneLoader
         {
             SceneManager.LoadScene(scene.ToString());
         };
-        SceneManager.LoadScene(Scenes.Scene4_Loading.ToString());
+        SceneManager.LoadScene(Scenes.Scene5_Loading.ToString());
     }
     public static void LoaderCallBack() { 
     
@@ -33,5 +34,28 @@ public static class SceneLoader
             onLoaderCallBack=null;
         }
     }
+
+
+
+    //public static void LoadAdditiveScene(Scenes scene)
+    //{
+    //    onLoaderCallBack = () =>
+    //    {
+    //        SceneManager.LoadScene(scene.ToString(),LoadSceneMode.Additive);
+    //    };
+    //    SceneManager.LoadScene(Scenes.Scene5_Loading.ToString());
+    //}
+
+    //public static void UnLoadAdditiveScene(Scenes scene)
+    //{
+    //    onLoaderCallBack = () =>
+    //    {
+    //        SceneManager.LoadScene(scene.ToString(), LoadSceneMode.Additive);
+
+    //        SceneManager.UnloadSceneAsync(scene.ToString());
+    //    };
+    //    SceneManager.LoadScene(Scenes.Scene5_Loading.ToString());
+    //}
+
 }
 

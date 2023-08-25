@@ -1,4 +1,5 @@
 using System;
+using System.Xml.Serialization;
 //using UnityEditor.Build.Reporting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -67,6 +68,34 @@ public static class PlayerPrefsManager //: MonoBehaviour
     {
         return PlayerPrefs.GetInt(PlayerPrefsKeys.CurrentGarage);
     }
+
+    //////////////////////////////////////////////////////////////////
+    ///
+
+
+    public static void SetCurrentChar(int charNum)
+    {
+        PlayerPrefs.SetInt(PlayerPrefsKeys.CurrentCharacter, charNum);
+    }
+    public static int GetCurrentChar(){
+
+        return PlayerPrefs.GetInt(PlayerPrefsKeys.CurrentCharacter);
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    public static void SetCurrentTrack(int TrackNum)
+    {
+        PlayerPrefs.SetInt(PlayerPrefsKeys.CurrentTrack, TrackNum);
+    }
+    public static int GetCurrentTrack()
+    {
+
+        return PlayerPrefs.GetInt(PlayerPrefsKeys.CurrentTrack);
+    }
+
+    //////////////////////////////////////////////////////////////////////
+    
 
 
 

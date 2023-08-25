@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static SceneLoader;
+using UnityEngine.SceneManagement;
 
 public class CanvasController : MonoBehaviour
 {
@@ -56,8 +58,8 @@ public class CanvasController : MonoBehaviour
 
         On_CanvasChanger_CallBack = (int canvasNumber) =>
         {
-            if (canvasArray == null || canvasNumber<0 || canvasNumber>4) { Debug.LogError("Cavas number range should be 0 to 5"); return; };
-            canvasArray[PlayerPrefsManager.GetCurrentCanvas()].SetActive(false);         //SetActive F Current Canvas
+            if (canvasArray == null || canvasNumber<0 || canvasNumber>5) { Debug.LogError("Cavas number range should be 0 to 5"); return; };
+            canvasArray[canvasNumber-1].SetActive(false);         //SetActive F Current Canvas
             canvasArray[canvasNumber].SetActive(true);                                   //SetActive T Desired Canvas
 
             PlayerPrefsManager.SetCurrentCanvas(SetCanvasNumber);
@@ -76,28 +78,58 @@ public class CanvasController : MonoBehaviour
     ///////////////////////////////////////
 
 
+    //private void Start()
+    //{
+    //    IsGameSceneToMenuScene();
+    //}
 
-
-    private void Start()
-    {
-        IsGameSceneToMenuScene();
-    }
-
-    private void IsGameSceneToMenuScene()
-    {
-        if (PlayerPrefsManager.GetCurrentCanvas() ==3) //if paint btn was clicked in game play
-        {
-            canvasArray[5].SetActive(true); //active loading
-            canvasArray[0].SetActive(false); //main panel off 
-            canvasArray[3].SetActive(true);  //paint panel on
+    //private void IsGameSceneToMenuScene()
+    //{
+    //    if (PlayerPrefsManager.GetCurrentCanvas() ==3) //if paint btn was clicked in game play
+    //    {
+    //        canvasArray[5].SetActive(true); //active loading
+    //        canvasArray[0].SetActive(false); //main panel off 
+    //        canvasArray[3].SetActive(true);  //paint panel on
           
-        }
-        else
-        {
+    //    }
+    //    else
+    //    {
            
-        }
+    //    }
+
+    //}
+
+
+    /////////////////////////////////////////////////
+    ///
+
+
+
+
+
+
+    public static void LoadAdditiveScene(Scenes scene)
+    {
+        
+            SceneManager.LoadScene(scene.ToString(), LoadSceneMode.Additive);
+       
+ 
 
     }
+
+    public static void UnLoadAdditiveScene(Scenes scene)
+    {
+     
+            SceneManager.UnloadSceneAsync(scene.ToString());
+    
+    }
+
+
+
+
+
+
+
 
 
 
