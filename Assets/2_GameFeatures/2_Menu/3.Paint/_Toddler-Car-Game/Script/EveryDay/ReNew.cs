@@ -6,7 +6,7 @@ using DG.Tweening;
 public class ReNew : MonoBehaviour
 {
     public Select_Module selectModule;
-    public float Car_Force;
+    public float Car_Force=750;
     public BoxCollider2D SpeedBoster;
     public void Rest()
     {
@@ -31,7 +31,7 @@ public class ReNew : MonoBehaviour
             if (collision.gameObject.CompareTag("CoinTrigger"))
             {
                 AnimatorHandler.Instance.PlaySmile();
-                //SoundManager.instance.PlayEffect_Instance(16);
+               // SoundManager.instance.PlayEffect_Instance(16);
                 GetComponent<Rigidbody2D>().AddForce(Vector2.right* 50, ForceMode2D.Impulse);
                 gameObject.layer = 11;
             }
@@ -40,7 +40,7 @@ public class ReNew : MonoBehaviour
         {
             if (collision.gameObject.CompareTag("CoinTrigger"))
             {
-              //  SoundManager.instance.PlayEffect_Complete(13);
+               // SoundManager.instance.PlayEffect_Complete(13);
             }
         }
         else if (selectModule == Select_Module.vlc)
@@ -57,7 +57,7 @@ public class ReNew : MonoBehaviour
         {
             if (collision.gameObject.CompareTag("CoinTrigger"))
             {
-             //   SoundManager.instance.PlayEffect_Complete(14);
+                //SoundManager.instance.PlayEffect_Complete(14);
             }
         }
         else if (selectModule == Select_Module.end)
@@ -77,7 +77,7 @@ public class ReNew : MonoBehaviour
                 GetComponent<Animator>().Play(r.ToString());
                 if (r == 1)
                 {
-                   // SoundManager.instance.PlayEffect_Instance(62);
+                  //  SoundManager.instance.PlayEffect_Instance(62);
                 }
                 else
                 {
@@ -101,7 +101,7 @@ public class ReNew : MonoBehaviour
         {
             if (collision.gameObject.CompareTag("CoinTrigger"))
             {
-               // SoundManager.instance.PlayEffect_Instance(61);
+                //SoundManager.instance.PlayEffect_Instance(61);
                 GetComponent<Animator>().enabled = true;
                 GetComponent<BoxCollider2D>().enabled = false;
             }
@@ -112,7 +112,7 @@ public class ReNew : MonoBehaviour
             if (collision.gameObject.CompareTag("CharacterPart") || collision.gameObject.CompareTag("CoinTrigger"))
             {
                 AnimatorHandler.Instance.PlaySmile();
-                //SoundManager.instance.PlayEffect_Instance(22);
+               // SoundManager.instance.PlayEffect_Instance(22);
                 gameObject.GetComponent<SpriteRenderer>().enabled = false;
                 gameObject.GetComponent<BoxCollider2D>().enabled = false;
                 transform.GetChild(0).GetComponent<ParticleSystem>().Play();
@@ -144,14 +144,14 @@ public class ReNew : MonoBehaviour
             if (collision.gameObject.CompareTag("Wheel"))
             {
                 AnimatorHandler.Instance.PlayConfuse();
-               // SoundManager.instance.PlayEffect_Instance(25);
-               //SoundManager.instance.PlayEffect_Instance(53);
+                //SoundManager.instance.PlayEffect_Instance(25);
+                //SoundManager.instance.PlayEffect_Instance(53);
                 Debug.Log("Add Force on Car");
                 gameObject.GetComponent<BoxCollider2D>().enabled = false;
                 //Vector2 relativeVelocity = GetComponent<Rigidbody2D>().velocity - Car_Handler.instance.controller.GetComponent<Rigidbody2D>().velocity;
                 //Vector2 force = relativeVelocity * -Car_Force;
                 // Add the force to the object's Rigidbody2D component
-                Car_Handler.instance.controller.GetComponent<Rigidbody2D>().AddForce(Vector2.right*750, ForceMode2D.Impulse);
+                Car_Handler.instance.controller.GetComponent<Rigidbody2D>().AddForce(Vector2.right* Car_Force, ForceMode2D.Impulse);
             }
         }
         else if (selectModule == Select_Module.SpeedBosterReset)

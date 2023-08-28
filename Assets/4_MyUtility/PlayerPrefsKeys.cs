@@ -15,7 +15,7 @@ public static class PlayerPrefsKeys
     public const string CurrentCanvas = "CurrentCanvas";
 
     public const string CurrentGarage = "CurrentGarage";
-    public const string CurrentVehicle = "CurrentVehicle";
+    public const string CurrentTruck = "CurrentTruck";
     public const string CurrentCharacter = "CurrentCharacter;";
     public const string CurrentTrack = "CurrentTrack";
 

@@ -545,7 +545,10 @@ public class CarController : MonoBehaviour
             //Car_Handler.instance.flag = true;
             //gameObject.GetComponent<CarController>().enabled = false;
             DOTween.KillAll();
-            SceneManager.LoadScene("Car_Garage");
+         
+                Destroy(transform.parent.gameObject);
+            SceneLoader.LoadScene(SceneLoader.Scenes.Scene2_Menu);
+
             isDone = false;
         }
 

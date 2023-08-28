@@ -56,6 +56,12 @@ public class Garage_Controller : MonoBehaviour
 
     }
 
+    public void TruckSelect_Btn(int TruckNum)
+    {
+        PlayerPrefsManager.SetCurrentTruck(TruckNum);
+        CanvasController.Instance.ChangeCanvas(2);
+    }
+
 
     
  

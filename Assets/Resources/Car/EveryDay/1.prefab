@@ -5243,12 +5243,12 @@ MonoBehaviour:
   motorWheel: []
   speed: 0
   Using: 0
-  groundDistance: 2.1
-  motorPower: 1400
+  groundDistance: 8
+  motorPower: 1800
   brakePower: -14
-  decelerationSpeed: 10000
-  maxSpeed: 14
-  RotateForce: 140
+  decelerationSpeed: 1
+  maxSpeed: 30
+  RotateForce: 1
   EngineSoundS: {fileID: 0}
   isMobile: 1
   wheelParticle:
@@ -5260,11 +5260,11 @@ MonoBehaviour:
   useSmoke: 0
   smoke: {fileID: 0}
   smokeTargetSpeed: 17
-  cameraDistance: 27
+  cameraDistance: 16
   forward: 0
   backward: 0
   ringF: 0
-  JumpPower: 500
+  JumpPower: 800
   UseTirePBack: 1
   UseTirePF: 1
   IsGamePlay: 0
