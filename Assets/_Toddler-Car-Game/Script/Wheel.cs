@@ -23,13 +23,18 @@ public class Wheel : MonoBehaviour
             Car_Handler.instance.controller.ringF = true;
             SmoothFollow2D.Instance.carController.Using = true;
             v = collision.gameObject;
+            Debug.Log(Car_Handler.instance.controller.GetComponent<Rigidbody2D>().velocity.magnitude);
+            float speed = Car_Handler.instance.controller.GetComponent<Rigidbody2D>().velocity.magnitude;
             v.transform.parent.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
             v.transform.parent.gameObject.AddComponent<SplineFollower>();
             SplineFollower s= v.transform.GetComponentInParent<SplineFollower>();
             s.updateMethod=SplineUser.UpdateMethod.FixedUpdate;
             s.spline = spline;
             s.motion.is2D= true;
-            s.followSpeed = 25;
+            //s.followSpeed = 25;
+            print("speed " + speed);
+            s.followSpeed = speed;
+           
             s.useTriggers   = true;
             //s.triggerGroup = 1;
             EndP.SetActive(true);

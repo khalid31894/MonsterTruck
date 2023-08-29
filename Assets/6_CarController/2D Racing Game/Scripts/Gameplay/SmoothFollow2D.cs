@@ -27,7 +27,11 @@ public class SmoothFollow2D : MonoBehaviour
             carController = Car_Handler.instance.controller;
         }
         yield return new WaitForEndOfFrame();
-        target = GameObject.FindGameObjectWithTag(targetTag).transform;
+
+        if (GameObject.FindGameObjectWithTag(targetTag).transform != null)
+        {
+            target = GameObject.FindGameObjectWithTag(targetTag).transform;
+        }
         //Camera.fieldOfView = 60;
 
     }
