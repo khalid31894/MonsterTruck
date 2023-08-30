@@ -47,10 +47,14 @@ public class Grounded : MonoBehaviour
         Uneven = false;
         //SoundManager.instance.StopEffect(57);
 
-        if (GameManager.instance)
+        if (GameManager.instance && Car_Handler.instance)
         {
             Car_Handler.instance.controller.IsJump = false;
-            GameManager.instance.Jump.interactable = false;
+            if (GameManager.instance.Jump)
+            {
+
+                GameManager.instance.Jump.interactable = false;
+            }
         }
     }
 }

@@ -75,6 +75,15 @@ public class CanvasController : MonoBehaviour
 
 
 
+    private void OnEnable()
+    {
+       if( PaintSecUI.isPainted == true)
+        {
+            canvasArray[4].SetActive(true);
+        }
+    }
+
+
     ///////////////////////////////////////
 
 
@@ -90,11 +99,11 @@ public class CanvasController : MonoBehaviour
     //        canvasArray[5].SetActive(true); //active loading
     //        canvasArray[0].SetActive(false); //main panel off 
     //        canvasArray[3].SetActive(true);  //paint panel on
-          
+
     //    }
     //    else
     //    {
-           
+
     //    }
 
     //}
@@ -108,21 +117,21 @@ public class CanvasController : MonoBehaviour
 
 
 
-    public static void LoadAdditiveScene(Scenes scene)
-    {
-        
-            SceneManager.LoadScene(scene.ToString(), LoadSceneMode.Additive);
-       
- 
+    //public static void LoadAdditiveScene(Scenes scene)
+    //{
 
-    }
+    //        SceneManager.LoadScene(scene.ToString(), LoadSceneMode.Additive);
 
-    public static void UnLoadAdditiveScene(Scenes scene)
-    {
-     
-            SceneManager.UnloadSceneAsync(scene.ToString());
-    
-    }
+
+
+    //}
+
+    //public static void UnLoadAdditiveScene(Scenes scene)
+    //{
+
+    //        SceneManager.UnloadSceneAsync(scene.ToString());
+
+    //}
 
 
 

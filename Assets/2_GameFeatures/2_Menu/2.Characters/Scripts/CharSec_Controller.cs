@@ -8,6 +8,7 @@ public class CharSec_Controller : MonoBehaviour
     public void CharSelection(int selection)
     {
         PlayerPrefsManager.SetCurrentChar(selection);
-        CanvasController.Instance.ChangeCanvas(3);
+        SceneLoader.LoadScene(SceneLoader.Scenes.Scene3_Paint);
+        //CanvasController.Instance.ChangeCanvas(3);
     }
 }

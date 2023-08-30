@@ -7,7 +7,7 @@ public class PaintSecController : MonoBehaviour
 {
     private void OnEnable()
     {
-        CanvasController.LoadAdditiveScene(SceneLoader.Scenes.Scene3_Paint);
+      //  CanvasController.LoadAdditiveScene(SceneLoader.Scenes.Scene3_Paint);
 
     }
 

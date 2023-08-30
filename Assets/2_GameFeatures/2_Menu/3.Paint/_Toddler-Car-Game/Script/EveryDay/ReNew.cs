@@ -127,7 +127,7 @@ public class ReNew : MonoBehaviour
                 gameObject.GetComponent<SpriteRenderer>().enabled = false;
                 transform.GetChild(0).GetComponent<ParticleSystem>().Play();
                 GetComponent<Collider2D>().enabled = false;
-                Invoke(nameof(AgainGift), 5);
+                //Invoke(nameof(AgainGift), 5);
             }
         }
         else if (selectModule == Select_Module.Water)

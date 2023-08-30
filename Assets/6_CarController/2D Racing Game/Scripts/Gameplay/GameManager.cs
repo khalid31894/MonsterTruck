@@ -43,7 +43,10 @@ public class GameManager : MonoBehaviour
         if (Car_Handler.instance != null)
         {
             Car_Handler.instance.controller.IsJump = true;
-            Jump.onClick.AddListener(() => Car_Handler.instance.controller.CheckJump());
+            if (Jump)
+            {
+                Jump.onClick.AddListener(() => Car_Handler.instance.controller.CheckJump());
+            }
         }
         }
 }

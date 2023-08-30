@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class PaintSecUI : MonoBehaviour
 {
-
+    public static bool isPainted = false;
 
     public void GoToTrackSelection()
     {
@@ -34,12 +34,14 @@ public class PaintSecUI : MonoBehaviour
         DontDestroyOnLoad(Car_Handler.instance.Car);
       //  SceneManager.LoadSceneAsync(SceneName);
 
-        CanvasController.Instance.ChangeCanvas(4);
-        CanvasController.UnLoadAdditiveScene(SceneLoader.Scenes.Scene3_Paint);
 
 
+        //CanvasController.Instance.ChangeCanvas(4);
+        //CanvasController.UnLoadAdditiveScene(SceneLoader.Scenes.Scene3_Paint);
 
 
+        isPainted = true;
+        SceneLoader.LoadScene(SceneLoader.Scenes.Scene2_Menu);
 
 
 

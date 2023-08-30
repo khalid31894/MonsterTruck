@@ -238,7 +238,8 @@ public class CarController : MonoBehaviour
                             //motorBack[1].motorSpeed = Mathf.Lerp(motorBack[1].motorSpeed, -motorPower, Time.deltaTime * 1.4f);
                             for (int i = 0; i < motorBack.Length; i++)
                             {
-                                motorBack[i].motorSpeed = Mathf.Lerp(motorBack[i].motorSpeed, -motorPower, Time.deltaTime * 1.4f);
+                                motorBack[i].motorSpeed = Mathf.Lerp(motorBack[i].motorSpeed, -motorPower, Time.deltaTime );
+
                             }
                         }
                         // Wheel particles
@@ -261,13 +262,18 @@ public class CarController : MonoBehaviour
                             //    AnimatorHandler.Instance.idle=false;
                             //    AnimatorHandler.Instance.SetIdle();
                             //}
-                            print("backward");
+                           // print("backward");
                             if (speed < -maxSpeed)
                             {
                                 //if (isGrounded)
                                 {
                                     //motorBack[0].motorSpeed = Mathf.Lerp(motorBack[0].motorSpeed, 0, Time.deltaTime * 3f);
                                     //motorBack[1].motorSpeed = Mathf.Lerp(motorBack[1].motorSpeed, 0, Time.deltaTime * 3f);
+                                    if (transform.rotation.eulerAngles.z > 15)
+                                    {
+                                        Debug.Log(transform.rotation.eulerAngles.z);
+                                    }
+
                                     for (int i = 0; i < motorBack.Length; i++)
                                     {
                                         motorBack[i].motorSpeed = Mathf.Lerp(motorBack[i].motorSpeed, 0, Time.deltaTime * 3f);

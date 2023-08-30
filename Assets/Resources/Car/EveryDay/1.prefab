@@ -5244,7 +5244,7 @@ MonoBehaviour:
   speed: 0
   Using: 0
   groundDistance: 8
-  motorPower: 1800
+  motorPower: 2800
   brakePower: -14
   decelerationSpeed: 1
   maxSpeed: 25
@@ -5260,7 +5260,7 @@ MonoBehaviour:
   useSmoke: 0
   smoke: {fileID: 0}
   smokeTargetSpeed: 17
-  cameraDistance: 16
+  cameraDistance: 21
   forward: 0
   backward: 0
   ringF: 0
