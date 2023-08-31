@@ -232,16 +232,19 @@ public class CarController : MonoBehaviour
                         }
                         // Add force to car back wheel
                         //if (isGrounded)
+                        // {
+                        //print("forward");
+                        //motorBack[0].motorSpeed = Mathf.Lerp(motorBack[0].motorSpeed, -motorPower, Time.deltaTime * 1.4f);
+                        //motorBack[1].motorSpeed = Mathf.Lerp(motorBack[1].motorSpeed, -motorPower, Time.deltaTime * 1.4f);
+                        if (Grounded.IsGrounded == true)
                         {
-                            //print("forward");
-                            //motorBack[0].motorSpeed = Mathf.Lerp(motorBack[0].motorSpeed, -motorPower, Time.deltaTime * 1.4f);
-                            //motorBack[1].motorSpeed = Mathf.Lerp(motorBack[1].motorSpeed, -motorPower, Time.deltaTime * 1.4f);
-                            for (int i = 0; i < motorBack.Length; i++)
-                            {
-                                motorBack[i].motorSpeed = Mathf.Lerp(motorBack[i].motorSpeed, -motorPower, Time.deltaTime );
-
+                        for (int i = 0; i < motorBack.Length; i++) 
+                            {  
+                                motorBack[i].motorSpeed = Mathf.Lerp(motorBack[i].motorSpeed, -motorPower, Time.deltaTime);
                             }
                         }
+
+                        //}
                         // Wheel particles
 
                         FloorParticles();
@@ -288,7 +291,7 @@ public class CarController : MonoBehaviour
                                     {
                                         //motorBack[0].motorSpeed = Mathf.Lerp(motorBack[0].motorSpeed, motorPower, Time.deltaTime * 1.4f);
                                         //motorBack[1].motorSpeed = Mathf.Lerp(motorBack[1].motorSpeed, motorPower, Time.deltaTime * 1.4f);
-                                        motorBack[i].motorSpeed = Mathf.Lerp(motorBack[i].motorSpeed, motorPower, Time.deltaTime * 1.4f);
+                                        motorBack[i].motorSpeed = Mathf.Lerp(motorBack[i].motorSpeed, motorPower, Time.deltaTime );
                                     }
                                 }
                             }
@@ -340,7 +343,7 @@ public class CarController : MonoBehaviour
                 {
                     //motorBack[0].motorSpeed = Mathf.Lerp(motorBack[0].motorSpeed, -1000, Time.deltaTime * 5f);
                     //motorBack[1].motorSpeed = Mathf.Lerp(motorBack[1].motorSpeed, -1000, Time.deltaTime * 5f);
-                    motorBack[i].motorSpeed = Mathf.Lerp(motorBack[i].motorSpeed, -1000, Time.deltaTime * 5f);
+                    motorBack[i].motorSpeed = Mathf.Lerp(motorBack[i].motorSpeed, -3000, Time.deltaTime * 5f);
                 }
                 AnimatorHandler.Instance.SetIdle();
                 AnimatorHandler.Instance.idle = false;

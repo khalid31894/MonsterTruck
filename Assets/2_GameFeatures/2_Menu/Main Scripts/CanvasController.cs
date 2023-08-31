@@ -79,6 +79,10 @@ public class CanvasController : MonoBehaviour
     {
        if( PaintSecUI.isPainted == true)
         {
+            PlayerPrefsManager.SetCurrentCanvas(4);
+
+            canvasArray[0].SetActive(false);
+
             canvasArray[4].SetActive(true);
         }
     }

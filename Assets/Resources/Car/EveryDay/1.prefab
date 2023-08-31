@@ -5192,7 +5192,7 @@ WheelJoint2D:
   m_BreakTorque: Infinity
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: -14.6, y: 3.314079}
+  m_Anchor: {x: -14.441998, y: 3.3390918}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_Suspension:
     m_DampingRatio: 1
@@ -5217,7 +5217,7 @@ WheelJoint2D:
   m_BreakTorque: Infinity
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: 8.77, y: 3.27894}
+  m_Anchor: {x: 9.30816, y: 3.3390918}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_Suspension:
     m_DampingRatio: 1
@@ -5244,7 +5244,7 @@ MonoBehaviour:
   speed: 0
   Using: 0
   groundDistance: 8
-  motorPower: 2800
+  motorPower: 2000
   brakePower: -14
   decelerationSpeed: 1
   maxSpeed: 25
@@ -5718,7 +5718,7 @@ Transform:
   m_GameObject: {fileID: 4641271192527572453}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.03, y: -0.168, z: 0}
+  m_LocalPosition: {x: -2.92, y: -0.168, z: 0}
   m_LocalScale: {x: 1.2652, y: 1.2652, z: 1.2652}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5785,7 +5785,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 4641271192527572453}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: a28eb88f27ae0944e983cd6bbdcb617d, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -10937,7 +10937,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.882, y: -0.168, z: 0}
-  m_LocalScale: {x: 1.2652, y: 1.2652, z: 1}
+  m_LocalScale: {x: 1.2652, y: 1.2652, z: 1.2652}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6308730706998869022}
@@ -11003,7 +11003,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 8869535923827381218}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: a28eb88f27ae0944e983cd6bbdcb617d, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -11081,7 +11081,7 @@ Transform:
   m_GameObject: {fileID: 8870928564628507414}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.46, y: -3.2, z: 0}
+  m_LocalPosition: {x: -0.75, y: -0.68, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Assertions.Must;
+using UnityEngine.UI;
 
 public class Grounded : MonoBehaviour
 {
@@ -54,6 +55,7 @@ public class Grounded : MonoBehaviour
             {
 
                 GameManager.instance.Jump.interactable = false;
+              
             }
         }
     }

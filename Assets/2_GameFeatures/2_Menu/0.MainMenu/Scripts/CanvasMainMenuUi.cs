@@ -10,7 +10,7 @@ public class CanvasMainMenuUi : MonoBehaviour
 
     private void OnEnable()
     {
-        if (PaintSecUI.isPainted = false)
+        if (PaintSecUI.isPainted == false)
         {
         PlayerPrefsManager.SetCurrentCanvas(0);
 

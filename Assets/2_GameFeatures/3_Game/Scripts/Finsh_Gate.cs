@@ -14,6 +14,7 @@ public class Finsh_Gate : MonoBehaviour
             {
                 Car_Handler.instance.controller.finishGateReached = true;
                 Debug.Log("End Trigger");
+                PaintSecUI.isPainted = false;
             }
         }
         if (select_Trigger == Select_Trigger.Reduce_Speed)
