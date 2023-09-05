@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 3092042632767436406}
   - component: {fileID: 6358746592069948413}
   m_Layer: 0
-  m_Name: Dirt Patch
+  m_Name: Dirt Ground Patch
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -358,7 +358,7 @@ EdgeCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 46248469358711777}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 6200000, guid: 05db2ef8d31aa7d428dde9bd159ed9dd, type: 2}
   m_IncludeLayers:
@@ -5858,7 +5858,7 @@ GameObject:
   - component: {fileID: 6279525287659953340}
   - component: {fileID: 346403165762579997}
   m_Layer: 0
-  m_Name: Dirt Patch
+  m_Name: Dirt Ground Patch
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5934,8 +5934,8 @@ SpriteShapeRenderer:
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   m_LocalAABB:
-    m_Center: {x: -84.35277, y: -3.6603184, z: 0}
-    m_Extent: {x: 43.850292, y: 26.54028, z: 0}
+    m_Center: {x: -84.60028, y: -3.911829, z: 0}
+    m_Extent: {x: 44.097797, y: 26.288769, z: 0}
   m_SpriteSortPoint: 0
 --- !u!114 &6279525287659953340
 MonoBehaviour:
@@ -5952,9 +5952,9 @@ MonoBehaviour:
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
-    - position: {x: -128.20306, y: 22.87996, z: -0.00000043259814}
+    - position: {x: -128.69807, y: 22.376938, z: -0.00000043259817}
       leftTangent: {x: 0, y: 0, z: 0}
-      rightTangent: {x: 23.847527, y: 0.71429825, z: 0}
+      rightTangent: {x: 23.847397, y: 0.71429634, z: 0}
       mode: 2
       height: 1
       spriteIndex: 0
@@ -6009,21 +6009,21 @@ MonoBehaviour:
   m_Creator: {fileID: 0}
   m_Modifiers: []
   m_ColliderSegment:
-  - {x: -128.20306, y: 22.87996}
-  - {x: -123.58735, y: 22.733437}
-  - {x: -119.26795, y: 22.06057}
-  - {x: -115.228, y: 20.94002}
-  - {x: -111.45057, y: 19.450434}
-  - {x: -107.91874, y: 17.670454}
-  - {x: -104.615715, y: 15.678748}
-  - {x: -101.5245, y: 13.553948}
-  - {x: -98.628265, y: 11.374718}
-  - {x: -95.91007, y: 9.219702}
-  - {x: -93.35306, y: 7.16755}
-  - {x: -90.940315, y: 5.2969155}
-  - {x: -88.65496, y: 3.686447}
-  - {x: -86.48009, y: 2.4147944}
-  - {x: -84.3988, y: 1.5606091}
+  - {x: -128.69807, y: 22.376938}
+  - {x: -124.07607, y: 22.236818}
+  - {x: -119.73896, y: 21.581991}
+  - {x: -115.67158, y: 20.489313}
+  - {x: -111.858795, y: 19.035646}
+  - {x: -108.28547, y: 17.297844}
+  - {x: -104.93654, y: 15.35279}
+  - {x: -101.79676, y: 13.277323}
+  - {x: -98.85109, y: 11.14832}
+  - {x: -96.08436, y: 9.042637}
+  - {x: -93.48142, y: 7.037137}
+  - {x: -91.02717, y: 5.2086816}
+  - {x: -88.70645, y: 3.6341324}
+  - {x: -86.50415, y: 2.3903513}
+  - {x: -84.40511, y: 1.5542003}
   - {x: -82.394226, y: 1.2025412}
   - {x: -77.99344, y: 1.0307528}
   - {x: -74.17262, y: 0.9116414}
@@ -6042,7 +6042,7 @@ MonoBehaviour:
   - {x: -40.50248, y: 0.95379275}
   - {x: -40.944786, y: -29.527761}
   - {x: -128.10165, y: -30.200598}
-  - {x: -128.20306, y: 22.87996}
+  - {x: -128.69807, y: 22.376938}
 --- !u!68 &346403165762579997
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -6050,7 +6050,7 @@ EdgeCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1965406775820281147}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 6200000, guid: 05db2ef8d31aa7d428dde9bd159ed9dd, type: 2}
   m_IncludeLayers:
@@ -6078,21 +6078,21 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -128.20306, y: 22.87996}
-  - {x: -123.58735, y: 22.733437}
-  - {x: -119.26795, y: 22.06057}
-  - {x: -115.228, y: 20.94002}
-  - {x: -111.45057, y: 19.450434}
-  - {x: -107.91874, y: 17.670454}
-  - {x: -104.615715, y: 15.678748}
-  - {x: -101.5245, y: 13.553948}
-  - {x: -98.628265, y: 11.374718}
-  - {x: -95.91007, y: 9.219702}
-  - {x: -93.35306, y: 7.16755}
-  - {x: -90.940315, y: 5.2969155}
-  - {x: -88.65496, y: 3.686447}
-  - {x: -86.48009, y: 2.4147944}
-  - {x: -84.3988, y: 1.5606091}
+  - {x: -128.69807, y: 22.376938}
+  - {x: -124.07607, y: 22.236818}
+  - {x: -119.73896, y: 21.581991}
+  - {x: -115.67158, y: 20.489313}
+  - {x: -111.858795, y: 19.035646}
+  - {x: -108.28547, y: 17.297844}
+  - {x: -104.93654, y: 15.35279}
+  - {x: -101.79676, y: 13.277323}
+  - {x: -98.85109, y: 11.14832}
+  - {x: -96.08436, y: 9.042637}
+  - {x: -93.48142, y: 7.037137}
+  - {x: -91.02717, y: 5.2086816}
+  - {x: -88.70645, y: 3.6341324}
+  - {x: -86.50415, y: 2.3903513}
+  - {x: -84.40511, y: 1.5542003}
   - {x: -82.394226, y: 1.2025412}
   - {x: -77.99344, y: 1.0307528}
   - {x: -74.17262, y: 0.9116414}
@@ -6111,7 +6111,7 @@ EdgeCollider2D:
   - {x: -40.50248, y: 0.95379275}
   - {x: -40.944786, y: -29.527761}
   - {x: -128.10165, y: -30.200598}
-  - {x: -128.20306, y: 22.87996}
+  - {x: -128.69807, y: 22.376938}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -7081,7 +7081,7 @@ GameObject:
   - component: {fileID: 6292516197025525091}
   - component: {fileID: 7894885163797734340}
   m_Layer: 0
-  m_Name: Dirt Patch
+  m_Name: Dirt Ground Patch
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7433,7 +7433,7 @@ EdgeCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2411278775325351991}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 6200000, guid: 05db2ef8d31aa7d428dde9bd159ed9dd, type: 2}
   m_IncludeLayers:
@@ -8011,7 +8011,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: a03c5908ac40c0143afd6be5e635d8d7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -13273,7 +13273,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectModule: 5
-  Car_Force: 1000
+  Car_Force: 1500
   SpeedBoster: {fileID: 0}
 --- !u!61 &1817105701286240142
 BoxCollider2D:
@@ -14055,7 +14055,7 @@ GameObject:
   - component: {fileID: 7864740767407415109}
   - component: {fileID: 2606002428225868219}
   m_Layer: 0
-  m_Name: Dirt Patch
+  m_Name: Dirt Ground Patch
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14246,7 +14246,7 @@ EdgeCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4605428766177575365}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 6200000, guid: 05db2ef8d31aa7d428dde9bd159ed9dd, type: 2}
   m_IncludeLayers:
@@ -16066,7 +16066,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: a03c5908ac40c0143afd6be5e635d8d7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -17380,7 +17380,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectModule: 5
-  Car_Force: 1000
+  Car_Force: 1500
   SpeedBoster: {fileID: 0}
 --- !u!61 &1791750817942813665
 BoxCollider2D:
@@ -18325,7 +18325,7 @@ GameObject:
   - component: {fileID: 8492936955379781955}
   - component: {fileID: 309159096146173242}
   m_Layer: 0
-  m_Name: BROWN Patch
+  m_Name: Dirt Ground Patch
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18630,7 +18630,7 @@ EdgeCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5523510792695621093}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 6200000, guid: 05db2ef8d31aa7d428dde9bd159ed9dd, type: 2}
   m_IncludeLayers:
@@ -19177,7 +19177,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: a03c5908ac40c0143afd6be5e635d8d7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -22022,7 +22022,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: a03c5908ac40c0143afd6be5e635d8d7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -26963,7 +26963,7 @@ GameObject:
   - component: {fileID: 5503808977363256300}
   - component: {fileID: 6182278269503230409}
   m_Layer: 0
-  m_Name: Dirt Patch
+  m_Name: Dirt Ground Patch
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27305,7 +27305,7 @@ EdgeCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8436352120685147294}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 6200000, guid: 05db2ef8d31aa7d428dde9bd159ed9dd, type: 2}
   m_IncludeLayers:
@@ -28543,7 +28543,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectModule: 5
-  Car_Force: 1000
+  Car_Force: 1500
   SpeedBoster: {fileID: 0}
 --- !u!61 &5814004946930491441
 BoxCollider2D:
@@ -29166,7 +29166,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: a03c5908ac40c0143afd6be5e635d8d7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -29288,7 +29288,7 @@ Transform:
   m_GameObject: {fileID: 9011645049257056366}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -39.623165, y: 1.4457296, z: 0}
+  m_LocalPosition: {x: -40.67, y: 1.4457296, z: 0}
   m_LocalScale: {x: 1.7066445, y: 1.7066445, z: 1.7066445}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -29334,7 +29334,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: a03c5908ac40c0143afd6be5e635d8d7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -33581,6 +33581,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -1.581
+      objectReference: {fileID: 0}
+    - target: {fileID: 6550117319667596843, guid: 88108d553b10d074fa6f07b25201cd2e,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 4.169096
+      objectReference: {fileID: 0}
+    - target: {fileID: 6550117319667596843, guid: 88108d553b10d074fa6f07b25201cd2e,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.4567666
+      objectReference: {fileID: 0}
+    - target: {fileID: 6550117319667596843, guid: 88108d553b10d074fa6f07b25201cd2e,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.09890938
+      objectReference: {fileID: 0}
+    - target: {fileID: 6550117319667596843, guid: 88108d553b10d074fa6f07b25201cd2e,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.2283833
       objectReference: {fileID: 0}
     - target: {fileID: 8325419503408379035, guid: 88108d553b10d074fa6f07b25201cd2e,
         type: 3}
@@ -44734,6 +44754,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Gift
+      objectReference: {fileID: 0}
+    - target: {fileID: 8593366141818544057, guid: 59e7981843e5bb542aee4796a1dc0e33,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8593366141818544057, guid: 59e7981843e5bb542aee4796a1dc0e33,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8593366141818544057, guid: 59e7981843e5bb542aee4796a1dc0e33,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8593366141818544057, guid: 59e7981843e5bb542aee4796a1dc0e33,
         type: 3}
