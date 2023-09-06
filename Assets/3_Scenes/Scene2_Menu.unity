@@ -10983,11 +10983,11 @@ Transform:
   m_GameObject: {fileID: 495803466}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.4249575, y: 3.7966557, z: -18.416668}
-  m_LocalScale: {x: 1.0833334, y: 1.0833334, z: 1.0833334}
+  m_LocalPosition: {x: -1224.8385, y: -547.6, z: -17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 924809701}
+  m_Father: {fileID: 1849386979}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &495803470
 MonoBehaviour:
@@ -10996,7 +10996,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 495803466}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e1266a11c621e6448e049c91559e7f5, type: 3}
   m_Name: 
@@ -19921,7 +19921,6 @@ Transform:
   - {fileID: 1067792219}
   - {fileID: 699964216}
   - {fileID: 1199011944}
-  - {fileID: 495803469}
   m_Father: {fileID: 927401597}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!235 &924809702
@@ -20104,7 +20103,7 @@ MonoBehaviour:
   useSmoke: 0
   smoke: {fileID: 0}
   smokeTargetSpeed: 17
-  cameraDistance: 50
+  cameraDistance: 12
   forward: 0
   backward: 0
   ringF: 0
@@ -39873,6 +39872,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 495803469}
   - {fileID: 1023099584}
   - {fileID: 220802366}
   - {fileID: 573397581}
