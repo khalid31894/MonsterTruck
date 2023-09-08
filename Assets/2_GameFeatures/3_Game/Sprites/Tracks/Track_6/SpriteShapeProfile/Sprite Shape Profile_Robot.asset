@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Sprite Shape Profile_Robot
   m_EditorClassIdentifier: 
   m_Angles:
-  - m_Start: -67
+  - m_Start: -62
     m_End: 53
     m_Order: 0
     m_Sprites:

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Angles:
   - m_Start: -74
-    m_End: 75
+    m_End: 69
     m_Order: 0
     m_Sprites:
     - {fileID: 21300000, guid: 0eb47865ed20a254bb92d7c7ee7094c7, type: 3}
