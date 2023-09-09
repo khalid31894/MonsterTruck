@@ -1,16 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
-public class CanvasTracksUi : MonoBehaviour
+public class CanvasTracksUi:MonoBehaviour
 {
     public void ChangeToGameScene()
     {
         SceneLoader.LoadScene(SceneLoader.Scenes.Scene4_Game);
     }
-    public void TrackSelect_Btn(int TrackNum)
+    public void TrackSelect_Btn(int trackNum)
     {
-        PlayerPrefsManager.SetCurrentTrack(TrackNum);
+        PlayerPrefsManager.SetCurrentTrack(trackNum);
         SceneLoader.LoadScene(SceneLoader.Scenes.Scene4_Game);
     }
 }

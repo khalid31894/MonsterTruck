@@ -64,7 +64,7 @@ public class CanvasController : MonoBehaviour
 
             PlayerPrefsManager.SetCurrentCanvas(SetCanvasNumber);
         };
-        canvasArray[5].SetActive(true);
+        canvasArray[4].SetActive(true);
     }
 
 
@@ -83,7 +83,7 @@ public class CanvasController : MonoBehaviour
 
             canvasArray[0].SetActive(false);
 
-            canvasArray[4].SetActive(true);
+            canvasArray[3].SetActive(true);
         }
     }
 
