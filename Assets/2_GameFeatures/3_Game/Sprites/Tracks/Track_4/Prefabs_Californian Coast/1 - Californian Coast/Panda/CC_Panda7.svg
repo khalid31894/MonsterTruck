@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 120.63 210.93">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clippath);
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #faf8fb;
+      }
+    </style>
+    <clipPath id="clippath">
+      <path d="m45.88,195.35h30.63c25.5,0,45.7-21.56,44.03-47.01l-6.15-93.94c-1.85-28.29-25.34-50.29-53.69-50.29h0c-28.57,0-52.16,22.33-53.72,50.85L1.82,148.81c-1.39,25.28,18.74,46.54,44.06,46.54Z"/>
+    </clipPath>
+  </defs>
+  <g id="Landscape">
+    <g>
+      <g>
+        <path d="m45.88,195.35h30.63c25.5,0,45.7-21.56,44.03-47.01l-6.15-93.94c-1.85-28.29-25.34-50.29-53.69-50.29h0c-28.57,0-52.16,22.33-53.72,50.85L1.82,148.81c-1.39,25.28,18.74,46.54,44.06,46.54Z"/>
+        <g class="cls-1">
+          <rect class="cls-2" x="0" y="0" width="120.63" height="82.59" transform="translate(120.63 82.59) rotate(-180)"/>
+          <rect class="cls-2" x="0" y="128.34" width="120.63" height="82.59" transform="translate(120.63 339.28) rotate(-180)"/>
+        </g>
+      </g>
+      <ellipse cx="87.14" cy="38.25" rx="18.37" ry="24.28" transform="translate(-4.54 63.76) rotate(-39.25)"/>
+      <ellipse cx="35.8" cy="38.25" rx="26.13" ry="19.77" transform="translate(-16.47 41.78) rotate(-50.75)"/>
+    </g>
+  </g>
+</svg>

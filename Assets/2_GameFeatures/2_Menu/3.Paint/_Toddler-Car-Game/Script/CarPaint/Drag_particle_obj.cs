@@ -45,7 +45,7 @@ public class Drag_particle_obj : MonoBehaviour
         {
             if (canPick && transform.parent.name == handler.name && tag != "Ended" && Temp_Obj == null)
             {
-            //    SoundManager.instance.PlayEffect_Instance(7);
+            SoundManager.instance.PlayEffect_Instance(7);
                 pos = transform.localPosition;
                 offset = gameObject.transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z));
                 handler.TempList.Remove(handler.TempList[0]);

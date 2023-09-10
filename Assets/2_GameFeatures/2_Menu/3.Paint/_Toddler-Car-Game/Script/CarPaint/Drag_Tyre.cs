@@ -60,7 +60,7 @@ public class Drag_Tyre : MonoBehaviour/*, IPointerDownHandler*//*, IPointerUpHan
                 spriteRenderer.sprite = GetComponent<Image>().sprite;
                 Color tempColor = spriteRenderer.color;
                 tempColor.a = 1f;
-                //SoundManager.instance.PlayEffect_Instance(6);
+                SoundManager.instance.PlayEffect_Instance(6);
                 if (collided.transform.localScale.x == .9f)
                 {
                     collided.transform.localScale = new Vector2(RefSize, RefSize);
@@ -125,7 +125,7 @@ public class Drag_Tyre : MonoBehaviour/*, IPointerDownHandler*//*, IPointerUpHan
     {
         if (canPick&&Temp_Obj==null)
         {
-            //SoundManager.instance.PlayEffect_Instance(7);
+            SoundManager.instance.PlayEffect_Instance(7);
             pos = transform.localPosition;
             GameObject Obj = Instantiate(gameObject);
             Obj.SetActive(false);

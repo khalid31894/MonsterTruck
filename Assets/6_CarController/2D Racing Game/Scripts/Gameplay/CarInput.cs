@@ -20,7 +20,7 @@ public class CarInput : MonoBehaviour {
             carController.forward = true;
             if (Grounded.Uneven)
             {
-                //SoundManager.instance.PlayEffect_Loop(57);
+                SoundManager.instance.PlayEffect_Loop(57);
             }
         }
     }
@@ -33,7 +33,7 @@ public class CarInput : MonoBehaviour {
             {
                 AnimatorHandler.Instance.CarBack();
             }
-          //  SoundManager.instance.PlayEffect_Loop(12);
+          SoundManager.instance.PlayEffect_Loop(12);
             carController.Brake();
             carController.backward = true;
         }

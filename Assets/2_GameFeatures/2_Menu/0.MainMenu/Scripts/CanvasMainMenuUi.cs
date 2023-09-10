@@ -19,6 +19,8 @@ public class CanvasMainMenuUi : MonoBehaviour
   
     public void Privacy_Btn()
     {
+        SoundManager.instance.PlayEffect_Instance(1);
+
         privacyPanel.SetActive(true);
     }
 

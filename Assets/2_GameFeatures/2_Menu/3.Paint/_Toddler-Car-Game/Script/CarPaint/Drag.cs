@@ -32,7 +32,7 @@ public class Drag : MonoBehaviour
     {
         if (canUse)
         {
-           // SoundManager.instance.PlayEffect_Instance(7);
+           SoundManager.instance.PlayEffect_Instance(7);
             pos = transform.localPosition;
             offset = gameObject.transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z));
             if (!Used && Temp_Obj == null)

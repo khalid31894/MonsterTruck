@@ -5,10 +5,11 @@ using UnityEngine;
 public class Level_Controller : MonoBehaviour
 {
     public GameObject[] trackPrefabs;
-
+    //public int currentLv;
     private void Awake()
     {
-       //Instantiate(trackPrefabs[PlayerPrefsManager.GetCurrentTrack() -1 ],Vector3.zero, Quaternion.Euler(Vector3.zero));
+       // currentLv = PlayerPrefsManager.GetCurrentTrack();
+       Instantiate(trackPrefabs[PlayerPrefsManager.GetCurrentTrack() -1 ],Vector3.zero, Quaternion.Euler(Vector3.zero));
     }
     private void Start()
     {

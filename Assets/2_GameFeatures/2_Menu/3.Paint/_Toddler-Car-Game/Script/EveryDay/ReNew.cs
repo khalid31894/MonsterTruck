@@ -19,7 +19,7 @@ public class ReNew : MonoBehaviour
         {
             if (collision.gameObject.CompareTag("CharacterPart") && gameObject.CompareTag("ReNew"))
             {
-               // SoundManager.instance.PlayEffect_Instance(17);
+               SoundManager.instance.PlayEffect_Instance(17);
                 AnimatorHandler.Instance.PlaySmile();
                 gameObject.GetComponent<SpriteRenderer>().enabled = false;
                 transform.GetChild(0).GetComponent<ParticleSystem>().Play();
@@ -31,7 +31,7 @@ public class ReNew : MonoBehaviour
             if (collision.gameObject.CompareTag("CoinTrigger"))
             {
                 AnimatorHandler.Instance.PlaySmile();
-               // SoundManager.instance.PlayEffect_Instance(16);
+               SoundManager.instance.PlayEffect_Instance(16);
                 GetComponent<Rigidbody2D>().AddForce(Vector2.right* 50, ForceMode2D.Impulse);
                 gameObject.layer = 11;
             }
@@ -40,7 +40,7 @@ public class ReNew : MonoBehaviour
         {
             if (collision.gameObject.CompareTag("CoinTrigger"))
             {
-               // SoundManager.instance.PlayEffect_Complete(13);
+               SoundManager.instance.PlayEffect_Complete(13);
             }
         }
         else if (selectModule == Select_Module.vlc)
@@ -48,7 +48,7 @@ public class ReNew : MonoBehaviour
             if (collision.gameObject.CompareTag("CoinTrigger"))
             {
                 AnimatorHandler.Instance.PlaySmile();
-               // SoundManager.instance.PlayEffect_Complete(18);
+               SoundManager.instance.PlayEffect_Complete(18);
                 GetComponent<Rigidbody2D>().AddForce(new Vector2(5,15) * 50, ForceMode2D.Force);
                 gameObject.layer = 11;
             }
@@ -57,14 +57,14 @@ public class ReNew : MonoBehaviour
         {
             if (collision.gameObject.CompareTag("CoinTrigger"))
             {
-                //SoundManager.instance.PlayEffect_Complete(14);
+                SoundManager.instance.PlayEffect_Complete(14);
             }
         }
         else if (selectModule == Select_Module.end)
         {
             if (collision.gameObject.CompareTag("CoinTrigger"))
             {
-               // SoundManager.instance.PlayEffect_Instance(26);
+               SoundManager.instance.PlayEffect_Instance(26);
                 transform.GetChild(0).gameObject.SetActive(true);
             }
         } 
@@ -77,11 +77,11 @@ public class ReNew : MonoBehaviour
                 GetComponent<Animator>().Play(r.ToString());
                 if (r == 1)
                 {
-                  //  SoundManager.instance.PlayEffect_Instance(62);
+                  SoundManager.instance.PlayEffect_Instance(62);
                 }
                 else
                 {
-                   // SoundManager.instance.PlayEffect_Instance(63);
+                   SoundManager.instance.PlayEffect_Instance(63);
                 }
             }
         } 
@@ -92,7 +92,7 @@ public class ReNew : MonoBehaviour
             {
                 
                 AnimatorHandler.Instance.PlaySmile();
-               // SoundManager.instance.PlayEffect_Instance(21);
+               SoundManager.instance.PlayEffect_Instance(21);
                 GetComponent<Rigidbody2D>().AddForce(new Vector2(5, 15) * 100, ForceMode2D.Force);
                 gameObject.layer = 11;
             }
@@ -101,7 +101,7 @@ public class ReNew : MonoBehaviour
         {
             if (collision.gameObject.CompareTag("CoinTrigger"))
             {
-                //SoundManager.instance.PlayEffect_Instance(61);
+                SoundManager.instance.PlayEffect_Instance(61);
                 GetComponent<Animator>().enabled = true;
                 GetComponent<BoxCollider2D>().enabled = false;
             }
@@ -112,7 +112,7 @@ public class ReNew : MonoBehaviour
             if (collision.gameObject.CompareTag("CharacterPart") || collision.gameObject.CompareTag("CoinTrigger"))
             {
                 AnimatorHandler.Instance.PlaySmile();
-               // SoundManager.instance.PlayEffect_Instance(22);
+               SoundManager.instance.PlayEffect_Instance(22);
                 gameObject.GetComponent<SpriteRenderer>().enabled = false;
                 gameObject.GetComponent<BoxCollider2D>().enabled = false;
                 transform.GetChild(0).GetComponent<ParticleSystem>().Play();
@@ -123,7 +123,7 @@ public class ReNew : MonoBehaviour
             if (collision.gameObject.CompareTag("CharacterPart"))
             {
                 AnimatorHandler.Instance.PlaySmile();
-               // SoundManager.instance.PlayEffect_Instance(19);
+               SoundManager.instance.PlayEffect_Instance(19);
                 gameObject.GetComponent<SpriteRenderer>().enabled = false;
                 transform.GetChild(0).GetComponent<ParticleSystem>().Play();
                 GetComponent<Collider2D>().enabled = false;
@@ -135,7 +135,7 @@ public class ReNew : MonoBehaviour
             if (collision.gameObject.CompareTag("Wheel"))
             {
                 AnimatorHandler.Instance.PlaySmile();
-               // SoundManager.instance.PlayEffect_Instance(20);
+               SoundManager.instance.PlayEffect_Instance(20);
                 transform.GetChild(0).transform.GetComponent<ParticleSystem>().Play();
             }
         }
@@ -144,8 +144,8 @@ public class ReNew : MonoBehaviour
             if (collision.gameObject.CompareTag("Wheel"))
             {
                 AnimatorHandler.Instance.PlayConfuse();
-                //SoundManager.instance.PlayEffect_Instance(25);
-                //SoundManager.instance.PlayEffect_Instance(53);
+                SoundManager.instance.PlayEffect_Instance(25);
+                SoundManager.instance.PlayEffect_Instance(53);
                 Debug.Log("Add Force on Car");
                 gameObject.GetComponent<BoxCollider2D>().enabled = false;
                 //Vector2 relativeVelocity = GetComponent<Rigidbody2D>().velocity - Car_Handler.instance.controller.GetComponent<Rigidbody2D>().velocity;

@@ -89,8 +89,8 @@ public class Car_Paint : MonoBehaviour
     }
     public void Next_Btn()
     {
-        //SoundManager.instance.PlayEffect_Instance(0);
-        //SoundManager.instance.PlayEffect_Instance(8);
+        SoundManager.instance.PlayEffect_Instance(0);
+        SoundManager.instance.PlayEffect_Instance(8);
         if (page<4)
         {
             for (int i = 0; i < garari.Length; i++)
@@ -127,8 +127,8 @@ public class Car_Paint : MonoBehaviour
     public void Back_Btn()
     {
         AnimatorHandler.Instance.PlayBack();
-       // SoundManager.instance.PlayEffect_Instance(0);
-        //SoundManager.instance.PlayEffect_Instance(8);
+       SoundManager.instance.PlayEffect_Instance(0);
+        SoundManager.instance.PlayEffect_Instance(8);
         if (page>-1)
         {
             for (int i = 0; i < garari.Length; i++)
@@ -169,7 +169,7 @@ public class Car_Paint : MonoBehaviour
     public static void Next_Scene(string SceneName)
     {
         
-       // SoundManager.instance.PlayEffect_Instance(0);
+       SoundManager.instance.PlayEffect_Instance(0);
         DOTween.KillAll();
         Car_Handler.instance.controller.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
         Car_Handler.instance.DisAbleParticleRigid();

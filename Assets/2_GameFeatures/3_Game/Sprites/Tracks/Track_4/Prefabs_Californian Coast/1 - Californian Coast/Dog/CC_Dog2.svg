@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.3 311.71">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #c9843c;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 6.77px;
+      }
+
+      .cls-2 {
+        fill: #b4783a;
+      }
+
+      .cls-3 {
+        fill: #d48d44;
+      }
+    </style>
+  </defs>
+  <g id="Aimation_Highlight" data-name="Aimation Highlight">
+    <g>
+      <rect class="cls-2" x="22.53" width="12.88" height="165.72"/>
+      <rect class="cls-2" x="250.87" width="12.88" height="165.72"/>
+      <rect class="cls-3" x="0" y="159.06" width="283.3" height="152.65" rx="5.23" ry="5.23"/>
+      <line class="cls-1" x1="12.7" y1="189.49" x2="270.09" y2="189.49"/>
+      <line class="cls-1" x1="12.7" y1="221.13" x2="270.09" y2="221.13"/>
+      <line class="cls-1" x1="12.7" y1="252.78" x2="270.09" y2="252.78"/>
+      <line class="cls-1" x1="12.7" y1="284.42" x2="270.09" y2="284.42"/>
+    </g>
+  </g>
+</svg>

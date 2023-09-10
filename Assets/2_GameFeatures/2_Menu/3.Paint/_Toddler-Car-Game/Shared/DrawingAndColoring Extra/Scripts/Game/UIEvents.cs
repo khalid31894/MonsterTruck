@@ -116,7 +116,7 @@ namespace IndieStudio.DrawingAndColoring.Logic
 			if (tool == null) {
 				return;
 			}
-           // SoundManager.instance.PlayEffect_Instance(1);
+           SoundManager.instance.PlayEffect_Instance(1);
             GameManager gameManager = GameObject.FindObjectOfType<GameManager> ();
 			
 			if (tool.useAsToolContent) {//like an eraser
@@ -153,7 +153,7 @@ namespace IndieStudio.DrawingAndColoring.Logic
         //[System.Obsolete]
         public void ToolContentClickEvent (ToolContent content)
 		{
-			//SoundManager.instance.PlayEffect_Instance(1);
+			SoundManager.instance.PlayEffect_Instance(1);
 			if (content == null) {
 				return;
 			}
@@ -204,20 +204,20 @@ namespace IndieStudio.DrawingAndColoring.Logic
 		{
 			if (GameManager.PaintMInstance.currentTool.name == "Pencil")
 			{
-				//SoundManager.instance.PlayEffect_Loop(2);
+				SoundManager.instance.PlayEffect_Loop(2);
 			}
 			else if (GameManager.PaintMInstance.currentTool.name == "Brush")
 			{
-				//SoundManager.instance.PlayEffect_Loop(3);
+				SoundManager.instance.PlayEffect_Loop(3);
 			}
 			else if (GameManager.PaintMInstance.currentTool.name == "TexturePaint")
 			{
-				//SoundManager.instance.PlayEffect_Loop(4);
+				SoundManager.instance.PlayEffect_Loop(4);
 			}
 			else if (GameManager.PaintMInstance.currentTool.name == "Spunch")
 			{
-				//SoundManager.instance.PlayEffect_Loop(58);
-				//SoundManager.instance.PlayEffect_Loop(59);
+				SoundManager.instance.PlayEffect_Loop(58);
+				SoundManager.instance.PlayEffect_Loop(59);
 			}
 			
 			GameManager.clickDownOnDrawArea = true;
@@ -228,20 +228,20 @@ namespace IndieStudio.DrawingAndColoring.Logic
 			//print("adasda");
             if (GameManager.PaintMInstance.currentTool.name == "Pencil")
             {
-               // SoundManager.instance.StopEffect(2);
+               SoundManager.instance.StopEffect(2);
             }
             else if (GameManager.PaintMInstance.currentTool.name == "Brush")
             {
-                //SoundManager.instance.StopEffect(3);
+                SoundManager.instance.StopEffect(3);
             }
 			else if (GameManager.PaintMInstance.currentTool.name == "TexturePaint")
             {
-                //SoundManager.instance.StopEffect(4);
+               SoundManager.instance.StopEffect(4);
             }
 			else if (GameManager.PaintMInstance.currentTool.name == "Spunch")
             {
-                //SoundManager.instance.StopEffect(58);
-               // SoundManager.instance.StopEffect(59);
+                SoundManager.instance.StopEffect(58);
+               SoundManager.instance.StopEffect(59);
             }
             GameManager.clickDownOnDrawArea = false;
 		}

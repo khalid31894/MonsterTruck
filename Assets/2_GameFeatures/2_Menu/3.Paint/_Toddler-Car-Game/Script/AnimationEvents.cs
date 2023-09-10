@@ -85,18 +85,18 @@ public class AnimationEvents : MonoBehaviour
     }
     public void PlaySmileSounds()
     {
-        //SoundManager.instance.PlayBetween(40, 46);
+        SoundManager.instance.PlayBetween(40, 46);
     }
     public void PlayWooSounds()
     {
-        //SoundManager.instance.PlayBetween(49, 53);
+        SoundManager.instance.PlayBetween(49, 53);
     }
     public void PlayjumpSounds()
     {
-        //SoundManager.instance.PlayEffect_Instance(55);
+        SoundManager.instance.PlayEffect_Instance(55);
     }
     public void PlayjumpLaughSounds()
     {
-        //    SoundManager.instance.PlayEffect_Instance(56);
+            SoundManager.instance.PlayEffect_Instance(56);
     }
 }

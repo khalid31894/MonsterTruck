@@ -54,6 +54,8 @@ public class CanvasController : MonoBehaviour
 
     public void ChangeCanvas( int canvasNumber)  //Applied on All Btns which change panels
     {
+        SoundManager.instance.PlayEffect_Instance(1);
+
         SetCanvasNumber = canvasNumber; //Static var for callback paramerter
 
         On_CanvasChanger_CallBack = (int canvasNumber) =>

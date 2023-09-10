@@ -21,9 +21,9 @@ public class Grounded : MonoBehaviour
         Debug.Log(collision.gameObject.name);
         if (collision.gameObject.tag == "Ground"&&!IsGrounded)
         {
-            //SoundManager.instance.PlayEffect_Complete(23);
+            SoundManager.instance.PlayEffect_Complete(23);
             IsGrounded = true;
-            //SoundManager.instance.StopEffect(57);
+            SoundManager.instance.StopEffect(57);
             if (GameManager.instance)
             {
                 if (Car_Handler.instance.controller.IsJump != true)
@@ -37,7 +37,7 @@ public class Grounded : MonoBehaviour
         if (collision.gameObject.name == "UnEvenRoad")
         {
             print("UNecve"); 
-           // SoundManager.instance.PlayEffect_Loop(57);
+           SoundManager.instance.PlayEffect_Loop(57);
             Uneven = true;
         }
     }
@@ -46,7 +46,7 @@ public class Grounded : MonoBehaviour
         Debug.Log(collision.gameObject.name);
         IsGrounded = false;
         Uneven = false;
-        //SoundManager.instance.StopEffect(57);
+        SoundManager.instance.StopEffect(57);
 
         if (GameManager.instance && Car_Handler.instance)
         {

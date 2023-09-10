@@ -38,8 +38,10 @@ public class Garage_Controller : MonoBehaviour
         PlayerPrefsManager.SetCurrentGarage(currentGarage);
     }
 
-    public void NextGarage_Btn() { 
-        if(currentGarage == garages.Length-1) { Debug.Log("Reached Max Garage"); return; }
+    public void NextGarage_Btn() {
+        SoundManager.instance.PlayEffect_Instance(1);
+
+        if (currentGarage == garages.Length-1) { Debug.Log("Reached Max Garage"); return; }
         garages[currentGarage].SetActive(false);
         currentGarage++;
         UpdateGarage();
@@ -47,6 +49,7 @@ public class Garage_Controller : MonoBehaviour
         
     }
     public void PrevGarage_Btn() {
+        SoundManager.instance.PlayEffect_Instance(1);
 
         if (currentGarage == 0) { Debug.Log("Reached Mix Garage"); return; }
         garages[currentGarage].SetActive(false);
@@ -58,6 +61,8 @@ public class Garage_Controller : MonoBehaviour
 
     public void TruckSelect_Btn(int TruckNum)
     {
+        SoundManager.instance.PlayEffect_Instance(1);
+
         PlayerPrefsManager.SetCurrentTruck(TruckNum);
         CanvasController.Instance.ChangeCanvas(2);
     }

@@ -13,7 +13,7 @@ public class PaintSecUI : MonoBehaviour
     {
 
 
-        // SoundManager.instance.PlayEffect_Instance(0);
+        SoundManager.instance.PlayEffect_Instance(0);
         DOTween.KillAll();
         Car_Handler.instance.controller.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
         Car_Handler.instance.DisAbleParticleRigid();

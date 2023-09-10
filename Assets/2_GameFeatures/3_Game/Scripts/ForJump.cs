@@ -16,7 +16,7 @@ public class ForJump : MonoBehaviour
             AnimatorHandler.Instance.PlaySmile();
             Car_Handler.instance.controller.IsJump = false;
             GameManager.instance.Jump.interactable = false;
-           // SoundManager.instance.PlayEffect_Complete(15);
+           SoundManager.instance.PlayEffect_Complete(15);
             jump.transform.DOLocalMoveY(-up, 0.3f).OnComplete(() =>
             {
                 jump.transform.DOLocalMoveY(down, 0.1f); 

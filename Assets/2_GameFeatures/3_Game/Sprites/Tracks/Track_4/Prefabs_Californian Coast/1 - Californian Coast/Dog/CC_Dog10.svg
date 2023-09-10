@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 468.01 674.48">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ec9d6b;
+      }
+
+      .cls-2 {
+        fill: #f2d6a2;
+        opacity: .72;
+      }
+
+      .cls-3 {
+        fill: #c97d4d;
+      }
+    </style>
+  </defs>
+  <g id="Grass_Road" data-name="Grass Road">
+    <g>
+      <path class="cls-3" d="m453.01,142.05H122.13c-14.76,0-20.62-19.07-8.41-27.35L279.16,2.58c5.08-3.44,11.74-3.44,16.81,0l165.44,112.12c12.21,8.28,6.35,27.35-8.41,27.35Z"/>
+      <rect class="cls-1" x="107.13" y="112.13" width="360.89" height="29.92" rx="8.32" ry="8.32"/>
+      <rect class="cls-2" x="0" y="643.02" width="450.65" height="31.46" rx="15.73" ry="15.73"/>
+      <rect class="cls-3" x="390.52" y="478.02" width="33.65" height="184.32" rx="8.79" ry="8.79"/>
+      <rect class="cls-3" x="150.96" y="478.02" width="33.65" height="184.32" rx="8.79" ry="8.79"/>
+      <rect class="cls-3" x="278.95" y="406.54" width="17.23" height="263.77" transform="translate(-319.9 598.32) rotate(-67.52)"/>
+      <rect class="cls-3" x="278.95" y="406.54" width="17.23" height="263.77" transform="translate(-99.63 1010.32) rotate(-112.52)"/>
+      <g>
+        <rect class="cls-3" x="23.19" y="565.71" width="12.8" height="96.64"/>
+        <rect class="cls-3" x="52.58" y="527.78" width="12.8" height="96.64"/>
+        <rect class="cls-3" x="81.97" y="489.85" width="12.8" height="96.64"/>
+        <rect class="cls-3" x="111.37" y="451.92" width="12.8" height="96.64"/>
+        <rect class="cls-3" x="140.76" y="413.99" width="12.8" height="93.14"/>
+        <rect class="cls-3" x="85.82" y="448.71" width="19.77" height="240.05" rx="9.89" ry="9.89" transform="translate(363.6 58) rotate(37.23)"/>
+        <rect class="cls-3" x="83.95" y="363.22" width="11.05" height="249.15" rx="5.52" ry="5.52" transform="translate(313.36 45.27) rotate(37.23)"/>
+      </g>
+      <g>
+        <rect class="cls-1" x="150.96" y="268.09" width="273.21" height="29.64" rx="3.14" ry="3.14"/>
+        <rect class="cls-3" x="153.57" y="297.73" width="268" height="8.37"/>
+        <rect class="cls-1" x="150.96" y="306.11" width="273.21" height="29.64" rx="3.14" ry="3.14"/>
+        <rect class="cls-3" x="153.57" y="335.74" width="268" height="8.37"/>
+        <rect class="cls-1" x="150.96" y="344.12" width="273.21" height="29.64" rx="3.14" ry="3.14"/>
+        <rect class="cls-3" x="153.57" y="373.76" width="268" height="8.37"/>
+        <rect class="cls-1" x="150.96" y="382.13" width="273.21" height="29.64" rx="3.14" ry="3.14"/>
+        <rect class="cls-3" x="153.57" y="411.77" width="268" height="8.37"/>
+        <rect class="cls-1" x="150.96" y="420.14" width="273.21" height="29.64" rx="3.14" ry="3.14"/>
+        <rect class="cls-3" x="153.57" y="449.78" width="268" height="8.37"/>
+        <rect class="cls-1" x="150.96" y="458.15" width="273.21" height="29.64" rx="3.14" ry="3.14"/>
+      </g>
+      <rect class="cls-3" x="167.96" y="142.05" width="27.99" height="126.04"/>
+      <rect class="cls-3" x="379.19" y="142.05" width="27.99" height="126.04"/>
+    </g>
+  </g>
+</svg>

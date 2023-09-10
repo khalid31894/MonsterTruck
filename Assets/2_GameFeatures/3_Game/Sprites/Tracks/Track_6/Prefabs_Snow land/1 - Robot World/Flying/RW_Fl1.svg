@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 852.22 362.75">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #d1d1d1;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 3.18px;
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath-2);
+      }
+
+      .cls-5 {
+        fill: #d6d6d6;
+      }
+
+      .cls-6 {
+        fill: #d0cef0;
+      }
+
+      .cls-7 {
+        fill: #f5f6ff;
+      }
+
+      .cls-8 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-9 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-10 {
+        fill: #b5fff5;
+      }
+
+      .cls-11 {
+        clip-path: url(#clippath-3);
+      }
+
+      .cls-12 {
+        fill: #5dcfbf;
+      }
+
+      .cls-13 {
+        fill: #6cf0de;
+      }
+    </style>
+    <clipPath id="clippath">
+      <ellipse class="cls-7" cx="436.89" cy="187.18" rx="346.5" ry="122.05"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <path class="cls-1" d="M83.69,79.45c0,1.85,1.12,3.53,2.86,4.18,42.52,15.84,212.26,25.41,212.26,10.88V26.01c0-14.53-169.74-4.96-212.26,10.88-1.73,.65-2.86,2.33-2.86,4.18v38.38Z"/>
+    </clipPath>
+    <clipPath id="clippath-2">
+      <path class="cls-1" d="M11.04,195.35c0,1.37,.83,2.6,2.11,3.08,31.36,11.69,156.58,18.75,156.58,8.03v-50.53c0-10.72-125.22-3.66-156.58,8.03-1.28,.48-2.11,1.72-2.11,3.08v28.32Z"/>
+    </clipPath>
+    <clipPath id="clippath-3">
+      <path class="cls-13" d="M680.33,154.04H191.25v-26.95c0-8.9,7.22-16.12,16.12-16.12h458.78c7.84,0,14.19,6.35,14.19,14.19v28.87Zm137.5-26.71c0-9.03-7.32-16.35-16.35-16.35h-57.49v43.06h73.84v-26.71Z"/>
+    </clipPath>
+  </defs>
+  <g id="Layer_8" data-name="Layer 8">
+    <g>
+      <rect class="cls-7" x="582.71" y="97.92" width="269.5" height="82.74" rx="41.37" ry="41.37"/>
+      <path class="cls-7" d="M352.41,255.7h182.35v68.74c0,21.14-17.16,38.3-38.3,38.3h-105.74c-21.14,0-38.3-17.16-38.3-38.3v-68.74h0Z"/>
+      <g>
+        <ellipse class="cls-7" cx="436.89" cy="187.18" rx="346.5" ry="122.05"/>
+        <g class="cls-9">
+          <path class="cls-2" d="M805.2,312.73H72.05s1.17-50.27,0-78.8c155.79,17.68,484.5,37.85,733.15,0v78.8Z"/>
+        </g>
+      </g>
+      <g>
+        <rect class="cls-6" x="188.99" y="197.52" width="20.1" height="20.1" rx="4.23" ry="4.23"/>
+        <rect class="cls-6" x="224.72" y="197.52" width="20.1" height="20.1" rx="4.23" ry="4.23"/>
+        <rect class="cls-6" x="260.46" y="197.52" width="20.1" height="20.1" rx="4.23" ry="4.23"/>
+        <rect class="cls-6" x="296.19" y="197.52" width="20.1" height="20.1" rx="4.23" ry="4.23"/>
+        <rect class="cls-6" x="331.93" y="197.52" width="20.1" height="20.1" rx="4.23" ry="4.23"/>
+        <rect class="cls-6" x="367.67" y="197.52" width="20.1" height="20.1" rx="4.23" ry="4.23"/>
+        <rect class="cls-6" x="403.4" y="197.52" width="20.1" height="20.1" rx="4.23" ry="4.23"/>
+        <rect class="cls-6" x="439.14" y="197.52" width="20.1" height="20.1" rx="4.23" ry="4.23"/>
+        <rect class="cls-6" x="474.88" y="197.52" width="20.1" height="20.1" rx="4.23" ry="4.23"/>
+        <rect class="cls-6" x="510.61" y="197.52" width="20.1" height="20.1" rx="4.23" ry="4.23"/>
+        <rect class="cls-6" x="546.35" y="197.52" width="20.1" height="20.1" rx="4.23" ry="4.23"/>
+        <rect class="cls-6" x="582.09" y="197.52" width="20.1" height="20.1" rx="4.23" ry="4.23"/>
+        <rect class="cls-6" x="617.82" y="197.52" width="20.1" height="20.1" rx="4.23" ry="4.23"/>
+        <rect class="cls-6" x="653.56" y="197.52" width="20.1" height="20.1" rx="4.23" ry="4.23"/>
+      </g>
+      <rect class="cls-2" x="191.25" y="164.68" width="489.08" height="16.51"/>
+      <g>
+        <path class="cls-1" d="M83.69,79.45c0,1.85,1.12,3.53,2.86,4.18,42.52,15.84,212.26,25.41,212.26,10.88V26.01c0-14.53-169.74-4.96-212.26,10.88-1.73,.65-2.86,2.33-2.86,4.18v38.38Z"/>
+        <g class="cls-8">
+          <rect class="cls-5" x="68.71" y="72.59" width="236.81" height="35.82"/>
+        </g>
+      </g>
+      <g>
+        <path class="cls-1" d="M11.04,195.35c0,1.37,.83,2.6,2.11,3.08,31.36,11.69,156.58,18.75,156.58,8.03v-50.53c0-10.72-125.22-3.66-156.58,8.03-1.28,.48-2.11,1.72-2.11,3.08v28.32Z"/>
+        <g class="cls-4">
+          <rect class="cls-5" y="190.29" width="174.69" height="26.42"/>
+        </g>
+      </g>
+      <polyline class="cls-3" points="192.02 1.12 165.17 27.98 138.32 1.12"/>
+      <polyline class="cls-3" points="244.95 1.12 218.1 27.98 191.25 1.12"/>
+      <g>
+        <path class="cls-13" d="M680.33,154.04H191.25v-26.95c0-8.9,7.22-16.12,16.12-16.12h458.78c7.84,0,14.19,6.35,14.19,14.19v28.87Zm137.5-26.71c0-9.03-7.32-16.35-16.35-16.35h-57.49v43.06h73.84v-26.71Z"/>
+        <g class="cls-11">
+          <rect class="cls-12" x="191.25" y="146.06" width="500.35" height="26.87"/>
+          <rect class="cls-12" x="743.99" y="146.06" width="73.84" height="26.87"/>
+          <g>
+            <g>
+              <polygon class="cls-10" points="398.99 177.39 378.45 177.39 451.03 110.98 471.57 110.98 398.99 177.39"/>
+              <polygon class="cls-10" points="371.87 177.39 361.08 177.39 433.67 110.98 444.46 110.98 371.87 177.39"/>
+            </g>
+            <g>
+              <polygon class="cls-10" points="505.83 177.39 485.29 177.39 557.88 110.98 578.42 110.98 505.83 177.39"/>
+              <polygon class="cls-10" points="478.72 177.39 467.92 177.39 540.51 110.98 551.31 110.98 478.72 177.39"/>
+            </g>
+            <polygon class="cls-10" points="602.44 177.39 591.65 177.39 664.23 110.98 675.03 110.98 602.44 177.39"/>
+          </g>
+          <g>
+            <polygon class="cls-10" points="755.37 177.39 734.83 177.39 807.42 110.98 827.96 110.98 755.37 177.39"/>
+            <polygon class="cls-10" points="728.26 177.39 717.46 177.39 790.05 110.98 800.85 110.98 728.26 177.39"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

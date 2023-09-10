@@ -27,7 +27,7 @@ public class AnimatorHandler : MonoBehaviour
     }
     public void PlayLanded()
     {
-        //SoundManager.instance.PlayBetween(46,48);
+        SoundManager.instance.PlayBetween(46,48);
         idle = false;
         Player.Play("Landed");
         Invoke(nameof(SetIdle), 2);
@@ -37,7 +37,7 @@ public class AnimatorHandler : MonoBehaviour
     {
         if (idle)
         {
-           // SoundManager.instance.PlayBetween(33,46);
+           SoundManager.instance.PlayBetween(33,46);
             print("smile");         
             idle = false;
             int smileIndex = Random.Range(1, 4);
@@ -51,7 +51,7 @@ public class AnimatorHandler : MonoBehaviour
     {
         if (idle)
         {
-           // SoundManager.instance.PlayBetween(48, 53);
+           SoundManager.instance.PlayBetween(48, 53);
             idle = false;
             Player.Play("Confuse");
             Invoke(nameof(SetIdle), 1.5f);

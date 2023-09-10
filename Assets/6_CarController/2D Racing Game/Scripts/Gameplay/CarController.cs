@@ -110,7 +110,7 @@ public class CarController : MonoBehaviour
         if (IsJump)
         {
           //  AnimatorHandler.Instance.PlaySmile();
-           // SoundManager.instance.PlayEffect_Complete(15);
+           SoundManager.instance.PlayEffect_Complete(15);
             GetComponent<Rigidbody2D>().AddForce(transform.up * JumpPower, ForceMode2D.Impulse);
             GameManager.instance.Jump.interactable = false;
 
@@ -143,7 +143,7 @@ public class CarController : MonoBehaviour
         else
         {
 
-            //SoundManager.instance.PlayEffect_Loop(12);
+            SoundManager.instance.PlayEffect_Loop(12);
             if (UseTirePBack)
                 em[0].enabled = false;
             if (UseTirePF)
@@ -171,7 +171,7 @@ public class CarController : MonoBehaviour
             }
             else
             {
-                //SoundManager.instance.PlayEffect_Loop(12);
+                SoundManager.instance.PlayEffect_Loop(12);
                 if (UseTirePBack)
                     em[0].enabled = false;
                 if (UseTirePF)
@@ -360,7 +360,7 @@ public class CarController : MonoBehaviour
                     Down = false;
                     StopCar();
                     ended = true;
-                    //SoundManager.instance.PlayEffect_Instance(27);
+                    SoundManager.instance.PlayEffect_Instance(27);
                     Invoke(nameof(SceneLoad), 5f);
                     Debug.Log("Target Achived" + TargetAchieved);
                     //GameManager.instance.particle.Play();
@@ -413,8 +413,8 @@ public class CarController : MonoBehaviour
         //Using = true;
         Down = false;
         //print(currentSpeed);
-        //SoundManager.instance.PlayEffect_Complete(10);
-        //SoundManager.instance.StopEffect(12);
+        SoundManager.instance.PlayEffect_Complete(10);
+        SoundManager.instance.StopEffect(12);
         speed = GetComponent<Rigidbody2D>().velocity.magnitude;
         if (speed < 0)
             speed = speed * -1;
