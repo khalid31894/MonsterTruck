@@ -108,8 +108,8 @@ namespace IndieStudio.DrawingAndColoring.Logic
                 //{
                 //    continue;
                 //}
-                string Selected_Car = "1"/*PlayerPrefs.GetString("Car_Resource")*/;
-                string Car_name = "1"/*PlayerPrefs.GetString("Selected_Car")*/;
+                string Selected_Car = "3"/*PlayerPrefs.GetString("Car_Resource")*/;
+                string Car_name = "3"/*PlayerPrefs.GetString("Selected_Car")*/;
                 GameObject shape = null;
                 print(Selected_Car);
                 if (int.Parse(Selected_Car) <= 10)
