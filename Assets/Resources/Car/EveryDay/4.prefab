@@ -5208,8 +5208,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7, y: -5}
-  m_SizeDelta: {x: 554, y: 251}
+  m_AnchoredPosition: {x: -21, y: 25}
+  m_SizeDelta: {x: 582, y: 332}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3421598737075763636
 CanvasRenderer:
@@ -5239,7 +5239,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b77b2a63b8f748e48afef924a7d36328, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 13cad985aca144f4896b831b2d37d1d5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5270,7 +5270,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!1 &2423908004546166786
 GameObject:
@@ -5298,8 +5298,8 @@ Transform:
   m_GameObject: {fileID: 2423908004546166786}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.34, y: 17.14, z: 0}
-  m_LocalScale: {x: 4.936854, y: 4.936854, z: 4.936854}
+  m_LocalPosition: {x: -1.76, y: 20.14, z: 0}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1756116905654728121}
@@ -5402,7 +5402,7 @@ GameObject:
   - component: {fileID: 5168035534975274786}
   - component: {fileID: 4522270624750401773}
   m_Layer: 9
-  m_Name: 2
+  m_Name: 4
   m_TagString: DontDestroy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5457,7 +5457,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c5a5ea4e10e909240875cdb831cb0f77, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f1395bf6424a65e418d33e58f8ae7381, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5743,7 +5743,7 @@ WheelJoint2D:
   m_BreakTorque: Infinity
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: -13.37, y: 7.2}
+  m_Anchor: {x: -11.8, y: 7.43}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_Suspension:
     m_DampingRatio: 1
@@ -5768,7 +5768,7 @@ WheelJoint2D:
   m_BreakTorque: Infinity
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: 9.85, y: 7.99}
+  m_Anchor: {x: 9.68, y: 6.5}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_Suspension:
     m_DampingRatio: 1
@@ -5866,7 +5866,7 @@ Transform:
   m_GameObject: {fileID: 5209067115687212886}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.86, y: 7.88, z: 0}
+  m_LocalPosition: {x: 1.24, y: 8.56, z: 0}
   m_LocalScale: {x: 4.290163, y: 4.290163, z: 4.290163}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5920,7 +5920,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -1.15, y: 14.76}
-  m_SizeDelta: {x: 615, y: 156}
+  m_SizeDelta: {x: 561, y: 163}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5589683769780892532
 CanvasRenderer:
@@ -5950,7 +5950,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c5a5ea4e10e909240875cdb831cb0f77, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f1395bf6424a65e418d33e58f8ae7381, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6036,35 +6036,26 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 140.37094, y: 20.227322}
-      - {x: 176.68703, y: 28.537533}
-      - {x: 228.67789, y: 21.873966}
-      - {x: 255.6627, y: 9.730186}
-      - {x: 282.34726, y: -21.5727}
-      - {x: 275.62128, y: -23.986876}
-      - {x: 295.69336, y: -42.65763}
-      - {x: 286.21854, y: -43.251976}
-      - {x: 237.69482, y: -4.6720915}
-      - {x: 199.1749, y: 6.3125486}
-      - {x: 163.26703, y: -1.6933403}
-      - {x: 126.77251, y: -20.2091}
-      - {x: 84.71098, y: -67.605736}
-      - {x: -90.53329, y: -64.78979}
-      - {x: -140.37503, y: -7.732235}
-      - {x: -208.35388, y: 6.797161}
-      - {x: -262.93546, y: -17.758217}
-      - {x: -299.69077, y: -56.42814}
-      - {x: -298.0678, y: -24.770267}
-      - {x: -273.5692, y: 12.51116}
-      - {x: -278.08618, y: 33.09446}
-      - {x: -261.53656, y: 63.350574}
-      - {x: -222.18724, y: 73.87091}
-      - {x: -184.41347, y: 51.01085}
-      - {x: -164.93048, y: 58.300594}
-      - {x: -127.59382, y: 56.26613}
-      - {x: -96.49585, y: 18.928223}
-      - {x: 77.72448, y: 15.424274}
-      - {x: 95.36104, y: 19.63217}
+    - - {x: -39.65539, y: 75.51328}
+      - {x: -39.791946, y: 63.340736}
+      - {x: -54.67017, y: 65.30253}
+      - {x: -79.50848, y: 71.47968}
+      - {x: -119.10274, y: 71.191376}
+      - {x: -215.61511, y: 73.46928}
+      - {x: -253.10953, y: 51.601616}
+      - {x: -273.3868, y: 5.6528826}
+      - {x: -271.91412, y: -60.995483}
+      - {x: -217.20122, y: -8.997326}
+      - {x: -124.86841, y: -15.860422}
+      - {x: -76.317375, y: -70.99116}
+      - {x: 84.53309, y: -66.80647}
+      - {x: 114.117744, y: -17.321196}
+      - {x: 215.66373, y: -8.317829}
+      - {x: 273.00537, y: -43.376663}
+      - {x: 268.28104, y: -2.7381449}
+      - {x: 255.59651, y: 21.831585}
+      - {x: 196.31123, y: 64.30504}
+      - {x: 2.4412103, y: 73.32656}
   m_UseDelaunayMesh: 0
 --- !u!223 &8861998309126537059
 Canvas:
@@ -6106,7 +6097,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &7606280848349413843
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6123,8 +6114,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.6, y: -87}
-  m_SizeDelta: {x: 645, y: 140}
+  m_AnchoredPosition: {x: 131, y: -13}
+  m_SizeDelta: {x: 387, y: 133}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8429696999916354240
 CanvasRenderer:
@@ -6154,7 +6145,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 974e3b77ab77dbb40bf1285f91cec83a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f3573bc35b07ced4083680b7a43ce834, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6262,7 +6253,7 @@ Camera:
   far clip plane: 100
   field of view: 60
   orthographic: 1
-  orthographic size: 0.89
+  orthographic size: 1.88
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
