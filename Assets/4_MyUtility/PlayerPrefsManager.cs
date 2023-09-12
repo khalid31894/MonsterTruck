@@ -100,9 +100,9 @@ public static class PlayerPrefsManager //: MonoBehaviour
     {
         PlayerPrefs.SetInt(PlayerPrefsKeys.CurrentTruck, TruckNum);
     }
-    public static void GetCurrentTruck()
+    public static int GetCurrentTruck()
     {
-        PlayerPrefs.GetInt(PlayerPrefsKeys.CurrentTruck);   
+        return PlayerPrefs.GetInt(PlayerPrefsKeys.CurrentTruck);   
     }
 
    /////////////////////////////////////////////////////////////////////////

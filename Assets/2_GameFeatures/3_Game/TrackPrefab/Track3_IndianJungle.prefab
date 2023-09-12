@@ -758,7 +758,7 @@ GameObject:
   - component: {fileID: 5502203623164311452}
   m_Layer: 0
   m_Name: Bridge
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12301,7 +12301,7 @@ GameObject:
   - component: {fileID: 4516644059280169791}
   m_Layer: 0
   m_Name: Bridge P1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12640,7 +12640,7 @@ GameObject:
   - component: {fileID: 6350517454653304355}
   m_Layer: 0
   m_Name: Bridge P2
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

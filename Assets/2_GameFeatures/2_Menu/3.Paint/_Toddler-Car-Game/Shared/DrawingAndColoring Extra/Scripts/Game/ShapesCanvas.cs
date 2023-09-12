@@ -102,17 +102,17 @@ namespace IndieStudio.DrawingAndColoring.Logic
 
                 //for (int i = 0; i < ShapesManager.instance.shapes.Count; i++)
                 //{
-               // int i = ShapesManager.instance.lastSelectedShape;
+                // int i = ShapesManager.instance.lastSelectedShape;
 
                 //if (ShapesManager.instance.shapes[i] == null)
                 //{
                 //    continue;
                 //}
-                string Selected_Car = "48"/*PlayerPrefs.GetString("Car_Resource")*/;
-                string Car_name = "48"/*PlayerPrefs.GetString("Selected_Car")*/;
+                //string Selected_Car = PlayerPrefsManager.GetCurrentTruck().ToString(); ;//"48"/*PlayerPrefs.GetString("Car_Resource")*/;
+                string Car_name = PlayerPrefsManager.GetCurrentTruck().ToString(); //"48"/*PlayerPrefs.GetString("Selected_Car")*/;
                 GameObject shape = null;
-                print(Selected_Car);
-                if (int.Parse(Selected_Car) <= 48)
+                print(Car_name);
+                if (int.Parse(Car_name) <= 48)
                 {
                     shape = Instantiate(Resources.Load("Car/EveryDay/" + Car_name), Vector3.zero, Quaternion.identity) as GameObject;
                 }

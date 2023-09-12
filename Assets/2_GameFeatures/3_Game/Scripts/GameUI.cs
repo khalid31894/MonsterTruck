@@ -8,6 +8,7 @@ public class GameUI : MonoBehaviour
     {
         PlayerPrefsManager.SetCurrentCanvas(0);
         Destroy(Car_Handler.instance.transform.gameObject);
+        PaintSecUI.isPainted = false;
         SceneLoader.LoadScene(SceneLoader.Scenes.Scene2_Menu);
     }
     public void Paint_Btn()
