@@ -57,7 +57,11 @@ public class SoundManager : MonoBehaviour
     
     public void StopEffect(int index)
     {
+        if (EffectsSource[index])
+        {
         EffectsSource[index].Stop();
+
+        }
     }
     public void StopAllSounds()
     {

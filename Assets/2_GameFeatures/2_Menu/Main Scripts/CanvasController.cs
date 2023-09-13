@@ -58,11 +58,11 @@ public class CanvasController : MonoBehaviour
 
         SetCanvasNumber = canvasNumber; //Static var for callback paramerter
 
-        On_CanvasChanger_CallBack = (int canvasNumber) =>
+        On_CanvasChanger_CallBack = (int canvasNo) =>
         {
-            if (canvasArray == null || canvasNumber<0 || canvasNumber>5) { Debug.LogError("Cavas number range should be 0 to 5"); return; };
-            canvasArray[canvasNumber-1].SetActive(false);         //SetActive F Current Canvas
-            canvasArray[canvasNumber].SetActive(true);                                   //SetActive T Desired Canvas
+           // if (canvasArray == null || canvasNo < 0 || canvasNo > 5) { Debug.LogError("Cavas number range should be 0 to 5"); return; };
+            canvasArray[PlayerPrefsManager.GetCurrentCanvas()].SetActive(false);         //SetActive F Current Canvas
+            canvasArray[canvasNo].SetActive(true);                                   //SetActive T Desired Canvas
 
             PlayerPrefsManager.SetCurrentCanvas(SetCanvasNumber);
         };
@@ -81,11 +81,16 @@ public class CanvasController : MonoBehaviour
     {
        if( PaintSecUI.isPainted == true)
         {
-            PlayerPrefsManager.SetCurrentCanvas(4);
+            PlayerPrefsManager.SetCurrentCanvas(3);
 
             canvasArray[0].SetActive(false);
 
+
             canvasArray[3].SetActive(true);
+        }
+        else
+        {
+            PlayerPrefsManager.SetCurrentCanvas(0);
         }
     }
 

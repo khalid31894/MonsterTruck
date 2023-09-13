@@ -9,7 +9,7 @@ public class Garage_Controller : MonoBehaviour
     public GameObject[] garages;
 
 
-    private void Start()
+    private void Awake()
     {
         PlayerPrefsManager.SetCurrentGarage(0);
         foreach (GameObject garage in garages)                          //turn off all garges

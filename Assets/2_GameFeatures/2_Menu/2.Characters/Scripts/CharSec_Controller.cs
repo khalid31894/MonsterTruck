@@ -5,8 +5,14 @@ using UnityEngine;
 
 public class CharSec_Controller : MonoBehaviour
 {
-   
-    public void CharSelection(int selection)
+    public void Home_Btn()
+    {
+        CanvasController.Instance.ChangeCanvas(1);
+
+    }
+
+
+    public void CharSelection_Btn(int selection)
     {
         PlayerPrefsManager.SetCurrentChar(selection);
         StartCoroutine(CharSelectTime());

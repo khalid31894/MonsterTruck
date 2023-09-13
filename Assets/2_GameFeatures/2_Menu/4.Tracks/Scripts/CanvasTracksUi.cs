@@ -3,11 +3,15 @@ using UnityEngine;
 
 public class CanvasTracksUi:MonoBehaviour
 {
-    public void ChangeToGameScene()
+    public void Home_Btn()
     {
         SoundManager.instance.PlayEffect_Instance(1);
 
-        SceneLoader.LoadScene(SceneLoader.Scenes.Scene4_Game);
+
+       // PlayerPrefsManager.SetCurrentCanvas(0);
+        Destroy(Car_Handler.instance.transform.gameObject);
+
+        CanvasController.Instance.ChangeCanvas(0);
     }
     public void TrackSelect_Btn(int trackNum)
     {

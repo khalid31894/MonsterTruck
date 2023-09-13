@@ -112,32 +112,32 @@ namespace IndieStudio.DrawingAndColoring.Logic
                 string Car_name = PlayerPrefsManager.GetCurrentTruck().ToString(); //"48"/*PlayerPrefs.GetString("Selected_Car")*/;
                 GameObject shape = null;
                 print(Car_name);
-                if (int.Parse(Car_name) <= 48)
+                if (int.Parse(Car_name) <= 8)
                 {
-                    shape = Instantiate(Resources.Load("Car/EveryDay/" + Car_name), Vector3.zero, Quaternion.identity) as GameObject;
+                    shape = Instantiate(Resources.Load("Car/CakeLand_Trucks/" + Car_name), Vector3.zero, Quaternion.identity) as GameObject;
                 }
-                ////else if (int.Parse(Selected_Car) > 10 && int.Parse(Selected_Car) <= 20)
-                ////{
-                ////    shape = Instantiate(Resources.Load("Car/Diggers_Cars/" + Car_name), Vector3.zero, Quaternion.identity) as GameObject;
-                ////}
-                ////else if (int.Parse(Selected_Car) > 20 && int.Parse(Selected_Car) <= 30)
-                ////{
-                ////    shape = Instantiate(Resources.Load("Car/Off_Road/" + Car_name), Vector3.zero, Quaternion.identity) as GameObject;
-                ////}
-                ////else if (int.Parse(Selected_Car) > 30 && int.Parse(Selected_Car) <= 40)
-                ////{
-                ////    shape = Instantiate(Resources.Load("Car/Space/" + Car_name), Vector3.zero, Quaternion.identity) as GameObject;
-                ////}
-                ////else if (int.Parse(Selected_Car) > 40 && int.Parse(Selected_Car) <= 50)
-                ////{
-                ////    shape = Instantiate(Resources.Load("Car/Super_Hero/" + Car_name), Vector3.zero, Quaternion.identity) as GameObject;
-                ////}
-                ////else if (int.Parse(Selected_Car) > 50 && int.Parse(Selected_Car) <= 60)
-                ////{
-                ////    shape = Instantiate(Resources.Load("Car/Race/" + Car_name), Vector3.zero, Quaternion.identity) as GameObject;
-                ////}
+                else if (int.Parse(Car_name) > 8 && int.Parse(Car_name) <= 16)
+                {
+                    shape = Instantiate(Resources.Load("Car/Halloween_Trucks/" + Car_name), Vector3.zero, Quaternion.identity) as GameObject;
+                }
+                else if (int.Parse(Car_name) > 16 && int.Parse(Car_name) <= 24)
+                {
+                    shape = Instantiate(Resources.Load("Car/Jungle_Trucks/" + Car_name), Vector3.zero, Quaternion.identity) as GameObject;
+                }
+                else if (int.Parse(Car_name) > 24 && int.Parse(Car_name) <= 32)
+                {
+                    shape = Instantiate(Resources.Load("Car/CalifornianCoast_Truck/" + Car_name), Vector3.zero, Quaternion.identity) as GameObject;
+                }
+                else if (int.Parse(Car_name) > 32 && int.Parse(Car_name) <= 40)
+                {
+                    shape = Instantiate(Resources.Load("Car/SnowLand_Trucks/" + Car_name), Vector3.zero, Quaternion.identity) as GameObject;
+                }
+                else if (int.Parse(Car_name) > 40 && int.Parse(Car_name) <= 48)
+                {
+                    shape = Instantiate(Resources.Load("Car/RobotWorld_Trucks/" + Car_name), Vector3.zero, Quaternion.identity) as GameObject;
+                }
                 //GameObject shape = Instantiate(ShapesManager.instance.shapes[i].gamePrefab, Vector3.zero, Quaternion.identity) as GameObject;
-               
+
 
                 CarScale = shape.GetComponent<Car_Handler>().CarScale;
                 shape.GetComponent<Car_Handler>().PreviousP = GetComponent<ShapesCanvas>();

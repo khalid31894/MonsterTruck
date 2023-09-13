@@ -49,4 +49,16 @@ public class PaintSecUI : MonoBehaviour
 
 
     }
+
+
+
+    public void Home_Btn()
+    {
+        isPainted = false;
+        SceneLoader.LoadScene(SceneLoader.Scenes.Scene2_Menu);
+
+
+    }
+
+
 }
