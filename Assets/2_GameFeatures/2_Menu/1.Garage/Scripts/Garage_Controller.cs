@@ -2,11 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using DG.Tweening;
 
 public class Garage_Controller : MonoBehaviour
 {
     public int currentGarage;
     public GameObject[] garages;
+
+    public GameObject next_btn,prev_btn;
+
+    public Transform garageParent;
+    public float TransitionTime=2f;
+    private float gargeParent_pos=0f;
 
 
     private void Awake()
@@ -20,6 +27,7 @@ public class Garage_Controller : MonoBehaviour
     }
     private void OnEnable()
     {
+        UpdateBtn();
         currentGarage = PlayerPrefsManager.GetCurrentGarage(); 
        foreach (GameObject garage in garages)                          //turn off all garges
         {
@@ -37,25 +45,35 @@ public class Garage_Controller : MonoBehaviour
     {
         PlayerPrefsManager.SetCurrentGarage(currentGarage);
     }
-
+    public void UpdateBtn()
+    {
+        if (currentGarage == garages.Length - 1) { next_btn.SetActive(false); }
+        if (currentGarage == 0) { prev_btn.SetActive(false); }
+        if(currentGarage > 0&& currentGarage < garages.Length - 1) { next_btn.SetActive(true); prev_btn.SetActive(true); }
+    }
     public void NextGarage_Btn() {
         SoundManager.instance.PlayEffect_Instance(1);
 
         if (currentGarage == garages.Length-1) { Debug.Log("Reached Max Garage"); return; }
-        garages[currentGarage].SetActive(false);
+        //garages[currentGarage].SetActive(false);
         currentGarage++;
         UpdateGarage();
+        UpdateBtn();
         garages[currentGarage].gameObject.SetActive(true);
-        
+        Next_CanvasTransition();
+
     }
     public void PrevGarage_Btn() {
         SoundManager.instance.PlayEffect_Instance(1);
 
         if (currentGarage == 0) { Debug.Log("Reached Mix Garage"); return; }
-        garages[currentGarage].SetActive(false);
+       // garages[currentGarage].SetActive(false);
         currentGarage--;
         UpdateGarage();
+        UpdateBtn();
         garages[currentGarage].gameObject.SetActive(true);
+        Prev_CanvasTransition();
+
 
     }
 
@@ -68,7 +86,19 @@ public class Garage_Controller : MonoBehaviour
     }
 
 
-    
- 
+
+    public void Next_CanvasTransition()
+    {
+        gargeParent_pos -= 1920;
+       garageParent.DOLocalMoveX(gargeParent_pos, TransitionTime);
+    }
+    public void Prev_CanvasTransition()
+    {
+        gargeParent_pos += 1920;
+        garageParent.DOLocalMoveX(gargeParent_pos, TransitionTime);
+    }
+
+
+
 
 }
