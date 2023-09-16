@@ -8,6 +8,7 @@ public class Garage_Controller : MonoBehaviour
 {
     public int currentGarage;
     public GameObject[] garages;
+    public GarageSlider[] slider;
 
     public GameObject next_btn,prev_btn;
 
@@ -91,6 +92,7 @@ public class Garage_Controller : MonoBehaviour
     {
         gargeParent_pos -= 1920;
        garageParent.DOLocalMoveX(gargeParent_pos, TransitionTime);
+
     }
     public void Prev_CanvasTransition()
     {
