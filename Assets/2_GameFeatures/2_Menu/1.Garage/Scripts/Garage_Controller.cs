@@ -8,7 +8,7 @@ public class Garage_Controller : MonoBehaviour
 {
     public int currentGarage;
     public GameObject[] garages;
-    public GarageSlider[] slider;
+    public GarageSlider[] sliderArray;
 
     public GameObject next_btn,prev_btn;
 
@@ -56,6 +56,8 @@ public class Garage_Controller : MonoBehaviour
         SoundManager.instance.PlayEffect_Instance(1);
 
         if (currentGarage == garages.Length-1) { Debug.Log("Reached Max Garage"); return; }
+        sliderArray[currentGarage].CloseGarage();
+        sliderArray[currentGarage+1].OpenGarage();
         //garages[currentGarage].SetActive(false);
         currentGarage++;
         UpdateGarage();
@@ -68,7 +70,9 @@ public class Garage_Controller : MonoBehaviour
         SoundManager.instance.PlayEffect_Instance(1);
 
         if (currentGarage == 0) { Debug.Log("Reached Mix Garage"); return; }
-       // garages[currentGarage].SetActive(false);
+        sliderArray[currentGarage].CloseGarage();
+        sliderArray[currentGarage - 1].OpenGarage();
+        // garages[currentGarage].SetActive(false);
         currentGarage--;
         UpdateGarage();
         UpdateBtn();
