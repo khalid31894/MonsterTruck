@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class CharSec_Controller : MonoBehaviour
 {
+    public GameObject loadingPanel;
     public void Home_Btn()
     {
         CanvasController.Instance.ChangeCanvas(1);
@@ -24,7 +25,7 @@ public class CharSec_Controller : MonoBehaviour
         SoundManager.instance.PlayEffect_Instance(1);
 
         yield return new WaitForSeconds(1);
-
+        loadingPanel.SetActive(true);
        
         SceneLoader.LoadScene(SceneLoader.Scenes.Scene3_Paint);
         //CanvasController.Instance.ChangeCanvas(3);
