@@ -10,11 +10,12 @@ public class MySimpleTweens : MonoBehaviour
     [SerializeField] float scaleBy= 0.01f;
     [SerializeField] float scaleTime = 4f;
     [SerializeField] float perRotationTime = 3f;
-
+    private Vector3 orignalForm;
     Tween x;
 
     private void OnEnable()
     {
+        orignalForm = this.gameObject.transform.localScale ;
         if (selectTween == SimpleTweens.rotateTyre)
         {
            x=this.gameObject.transform.DOLocalRotate(new Vector3(0,0,-360f),perRotationTime,RotateMode.LocalAxisAdd)
@@ -31,7 +32,9 @@ public class MySimpleTweens : MonoBehaviour
     }
     private void OnDisable()
     {
+        this.gameObject.transform.localScale= orignalForm;
         x.Kill();
+
     }
 
     // Start is called before the first frame update

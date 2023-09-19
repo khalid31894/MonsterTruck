@@ -22,10 +22,10 @@ public class CharSec_Controller : MonoBehaviour
 
     IEnumerator CharSelectTime()
     {
-        SoundManager.instance.PlayEffect_Instance(1);
-
-        yield return new WaitForSeconds(1);
+        SoundManager.instance.PlayEffect_Instance(1); 
         loadingPanel.SetActive(true);
+        yield return new WaitForSeconds(1);
+       
        
         SceneLoader.LoadScene(SceneLoader.Scenes.Scene3_Paint);
         //CanvasController.Instance.ChangeCanvas(3);
