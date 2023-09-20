@@ -5811,7 +5811,7 @@ MonoBehaviour:
   useSmoke: 0
   smoke: {fileID: 0}
   smokeTargetSpeed: 17
-  cameraDistance: 21
+  cameraDistance: 19
   forward: 0
   backward: 0
   ringF: 0

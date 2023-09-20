@@ -16,7 +16,7 @@ public class Grounded : MonoBehaviour
     {
         IsGrounded= true;
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionStay2D(Collision2D collision)
     {
         Debug.Log(collision.gameObject.name);
         if (collision.gameObject.tag == "Ground"&&!IsGrounded)
