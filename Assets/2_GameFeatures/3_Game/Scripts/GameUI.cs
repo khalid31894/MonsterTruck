@@ -13,8 +13,11 @@ public class GameUI : MonoBehaviour
     }
     public void Paint_Btn()
     {
-        PlayerPrefsManager.SetCurrentCanvas(3);
-        SceneLoader.LoadScene(SceneLoader.Scenes.Scene2_Menu);
+        
+
+        Destroy(Car_Handler.instance.transform.gameObject);
+        PaintSecUI.isPainted = false;
+        SceneLoader.LoadScene(SceneLoader.Scenes.Scene3_Paint);
 
     }
 
