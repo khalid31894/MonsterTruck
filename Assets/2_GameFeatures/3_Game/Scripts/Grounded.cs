@@ -18,7 +18,7 @@ public class Grounded : MonoBehaviour
     }
     private void OnCollisionStay2D(Collision2D collision)
     {
-        Debug.Log(collision.gameObject.name);
+        //Debug.Log(collision.gameObject.name);
         if (collision.gameObject.tag == "Ground"&&!IsGrounded)
         {
             SoundManager.instance.PlayEffect_Complete(23);
