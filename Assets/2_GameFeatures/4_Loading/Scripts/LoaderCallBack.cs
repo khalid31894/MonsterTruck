@@ -11,8 +11,8 @@ public class LoaderCallBack : MonoBehaviour
         if (isFirstUpdate)
         {
             isFirstUpdate = false;
-            SceneLoader.LoaderCallBack();
-          //  StartCoroutine(waitTime());
+           // SceneLoader.LoaderCallBack();
+           StartCoroutine(waitTime());
         }
 
 
@@ -20,6 +20,7 @@ public class LoaderCallBack : MonoBehaviour
 
    IEnumerator waitTime()
     {
+
         yield return new WaitForSeconds(3f);
         SceneLoader.LoaderCallBack();
 
