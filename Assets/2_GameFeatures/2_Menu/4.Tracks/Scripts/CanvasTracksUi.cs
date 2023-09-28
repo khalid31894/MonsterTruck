@@ -26,9 +26,6 @@ public class CanvasTracksUi:MonoBehaviour
     {
         //IntitializeAdmobAds_CB._instance.ShowAdmobInterstialAd();
     }
-    private void Awake()
-    {
-        IntitializeAdmobAds_CB._instance.ShowAdmobInterstialAd();
-    }
+   
 }
  

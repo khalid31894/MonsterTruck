@@ -41,6 +41,9 @@ public class PaintSecUI : MonoBehaviour
 
 
         isPainted = true;
+
+        LoaderCallBack.showMeAd = true;
+
         SceneLoader.LoadScene(SceneLoader.Scenes.Scene2_Menu);
 
 
@@ -55,8 +58,10 @@ public class PaintSecUI : MonoBehaviour
     public void Home_Btn()  //find my ads : home btn from paint to main menu
     {
 
-        IntitializeAdmobAds_CB._instance.ShowAdmobInterstialAd();
+        //IntitializeAdmobAds_CB._instance.ShowAdmobInterstialAd();
         isPainted = false;
+        LoaderCallBack.showMeAd = true;
+
         SceneLoader.LoadScene(SceneLoader.Scenes.Scene2_Menu);
 
        

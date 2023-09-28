@@ -5,7 +5,7 @@ using UnityEngine;
 public class LoaderCallBack : MonoBehaviour
 {
     private bool isFirstUpdate = true;
-
+    public static bool showMeAd=false;
     private void Update()
     {
         if (isFirstUpdate)
@@ -20,10 +20,20 @@ public class LoaderCallBack : MonoBehaviour
 
    IEnumerator waitTime()
     {
-
-        yield return new WaitForSeconds(3f);
-        SceneLoader.LoaderCallBack();
-
+        if (!showMeAd)
+        {
+            yield return new WaitForSeconds(3f);
+            SceneLoader.LoaderCallBack();
+        }
+        
+        if(showMeAd)
+        {
+            yield return new WaitForSeconds(1.5f);
+            IntitializeAdmobAds_CB._instance.ShowAdmobInterstialAd();
+            yield return new WaitForSeconds(1.5f);
+            showMeAd = false;
+            SceneLoader.LoaderCallBack();
+        }
 
     }
 }
