@@ -14,7 +14,7 @@ public class Feautre_PrivacyPanels : MonoBehaviour
     private void OnEnable()
     {
         FirstPanel.SetActive(true);
-        SecondPanel.SetActive(false);
+       // SecondPanel.SetActive(false);
         
     }
     private void OnDisable ()

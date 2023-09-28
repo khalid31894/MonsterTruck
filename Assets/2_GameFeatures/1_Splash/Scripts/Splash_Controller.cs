@@ -9,6 +9,9 @@ public class Splash_Controller : MonoBehaviour
     [SerializeField] private float SplashDelay=3;
 
 
+    public GameObject splashPanel;
+
+
     void Start()
     {
         CanShowPrivacyPanel();
@@ -26,6 +29,7 @@ public class Splash_Controller : MonoBehaviour
         }
         else
         {
+            splashPanel.SetActive(true);
             StartCoroutine(ChangeScene());
         }
     }

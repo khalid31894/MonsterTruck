@@ -16,7 +16,6 @@ public class StartCol_Ring : MonoBehaviour
             controller_Ring.startRamp.enabled = true;
             controller_Ring.mid_Col.enabled = true;
 
-            StartCoroutine(controller_Ring.CameraMove());
         }
     }
     private void FixedUpdate()

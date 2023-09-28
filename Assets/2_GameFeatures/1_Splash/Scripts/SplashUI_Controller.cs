@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class SplashUI_Controller : MonoBehaviour
 {
+    public GameObject splashPanel;
+    public GameObject privacyPanel;
+
    public void PrivacyAccept_Btn()
     {
-      
-            PlayerPrefsManager.SetPrivacySplash(true);
-            SceneLoader.LoadScene(SceneLoader.Scenes.Scene2_Menu);
+        privacyPanel.SetActive(false);
+        splashPanel.SetActive(true);
+        StartCoroutine(splashWait());
     
     }
     public void PrivacyPolicy_Btn()
@@ -16,7 +19,13 @@ public class SplashUI_Controller : MonoBehaviour
         //Direct to URL
         Application.OpenURL("https://taptoy.io/privacy/");
     }
+    private IEnumerator splashWait()
+    {
 
+        yield return new WaitForSeconds(3);
+        PlayerPrefsManager.SetPrivacySplash(true);
+        SceneLoader.LoadScene(SceneLoader.Scenes.Scene2_Menu);
+    }
 
 
 }

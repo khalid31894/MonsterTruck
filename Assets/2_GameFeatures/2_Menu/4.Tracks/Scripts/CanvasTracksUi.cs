@@ -20,4 +20,15 @@ public class CanvasTracksUi:MonoBehaviour
         PlayerPrefsManager.SetCurrentTrack(trackNum);
         SceneLoader.LoadScene(SceneLoader.Scenes.Scene4_Game);
     }
+
+
+    private void OnEnable()
+    {
+        //IntitializeAdmobAds_CB._instance.ShowAdmobInterstialAd();
+    }
+    private void Awake()
+    {
+        IntitializeAdmobAds_CB._instance.ShowAdmobInterstialAd();
+    }
 }
+ 

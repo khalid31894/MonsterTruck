@@ -688,8 +688,9 @@ GameObject:
   - component: {fileID: 387046173}
   - component: {fileID: 387046174}
   - component: {fileID: 387046175}
+  - component: {fileID: 387046176}
   m_Layer: 5
-  m_Name: Canvas-Overlay
+  m_Name: Canvas_Game
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -822,6 +823,18 @@ MonoBehaviour:
   - {fileID: 3890243183369708246, guid: 60a765c195a31d947b3c48f79bf5f797, type: 3}
   - {fileID: 5453322257956429515, guid: 3f5d14d40a335a749a7245eb8cd32aac, type: 3}
   - {fileID: 6998079990380257195, guid: 6536f21c06197ec4dbd18c281bf4d952, type: 3}
+--- !u!114 &387046176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387046168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20e30a62da1c4ec4abee40d4aa07ee1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &419863954 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2935818036752540849, guid: 441a2be2525f1914a8afdb8a2be91f3c,
@@ -1195,7 +1208,7 @@ Transform:
   m_GameObject: {fileID: 550845922}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23.45758, y: 7.1200285, z: -21}
+  m_LocalPosition: {x: 35.67, y: 9.5, z: -21}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

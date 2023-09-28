@@ -556,6 +556,8 @@ public class CarController : MonoBehaviour
             DOTween.KillAll();
          
                 Destroy(transform.parent.gameObject);
+            IntitializeAdmobAds_CB._instance.ShowAdmobInterstialAd(); // from game end to main manu
+
             SceneLoader.LoadScene(SceneLoader.Scenes.Scene2_Menu);
 
             isDone = false;
