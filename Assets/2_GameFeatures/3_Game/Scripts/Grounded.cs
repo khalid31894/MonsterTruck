@@ -43,7 +43,7 @@ public class Grounded : MonoBehaviour
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
-        Debug.Log(collision.gameObject.name);
+       // Debug.Log(collision.gameObject.name);
         IsGrounded = false;
         Uneven = false;
         SoundManager.instance.StopEffect(57);

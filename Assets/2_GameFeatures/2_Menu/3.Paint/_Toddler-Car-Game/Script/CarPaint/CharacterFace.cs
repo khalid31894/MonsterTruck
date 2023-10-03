@@ -6,7 +6,7 @@ public class CharacterFace : MonoBehaviour
 {
     private void OnMouseEnter()
     {
-        print("face");
+        //print("face");
         AnimatorHandler.Instance.PlaySmile();
     }
 }

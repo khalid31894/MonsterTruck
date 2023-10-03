@@ -21,7 +21,7 @@ public class PaintSecUI : MonoBehaviour
         Car_Handler.instance.flag = false;
         if (C != null)
         {
-            Debug.Log("Not Null" + C.name);
+          //  Debug.Log("Not Null" + C.name);
         }
         else
         {

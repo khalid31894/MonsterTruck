@@ -12,13 +12,18 @@ public class FireBase_SendEvents : MonoBehaviour
         Firebase.Analytics.FirebaseAnalytics.LogEvent(gameObject.name + "_Completed");
         Debug.Log(gameObject.name + "_Completed");
 
+     
+    }
+
+    private void Start()
+    {
+
         if (SceneManager.GetActiveScene().name == "Scene4_Game")
         {
             // if(Firebase!=null)
             Firebase.Analytics.FirebaseAnalytics.LogEvent("Track : " + PlayerPrefsManager.GetCurrentTrack());
             Firebase.Analytics.FirebaseAnalytics.LogEvent("Garage : " + PlayerPrefsManager.GetCurrentGarage());
             Firebase.Analytics.FirebaseAnalytics.LogEvent("Monster Truck : " + PlayerPrefsManager.GetCurrentTruck());
-
         }
     }
 }

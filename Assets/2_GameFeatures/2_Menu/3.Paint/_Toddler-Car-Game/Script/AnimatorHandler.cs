@@ -21,7 +21,7 @@ public class AnimatorHandler : MonoBehaviour
         if (!idle)
         {
             idle = true;
-            print("Idle");
+         //   print("Idle");
             Player.Play("idle");
         }
     }
@@ -38,7 +38,7 @@ public class AnimatorHandler : MonoBehaviour
         if (idle)
         {
            SoundManager.instance.PlayBetween(33,46);
-            print("smile");         
+           // print("smile");         
             idle = false;
             int smileIndex = Random.Range(1, 4);
             Player.Play(smileIndex.ToString(),0);

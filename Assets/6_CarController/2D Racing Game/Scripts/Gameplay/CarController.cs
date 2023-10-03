@@ -418,7 +418,7 @@ public class CarController : MonoBehaviour
         speed = GetComponent<Rigidbody2D>().velocity.magnitude;
         if (speed < 0)
             speed = speed * -1;
-        print("InStop " + speed);
+       // print("InStop " + speed);
 
         FloorParticleStop(speed);
         if (speed > 1)

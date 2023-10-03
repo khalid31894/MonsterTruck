@@ -111,7 +111,7 @@ namespace IndieStudio.DrawingAndColoring.Logic
                 //string Selected_Car = PlayerPrefsManager.GetCurrentTruck().ToString(); ;//"48"/*PlayerPrefs.GetString("Car_Resource")*/;
                 string Car_name = PlayerPrefsManager.GetCurrentTruck().ToString(); //"48"/*PlayerPrefs.GetString("Selected_Car")*/;
                 GameObject shape = null;
-                print(Car_name);
+                //print(Car_name);
                 if (int.Parse(Car_name) <= 8)
                 {
                     shape = Instantiate(Resources.Load("Car/CakeLand_Trucks/" + Car_name), Vector3.zero, Quaternion.identity) as GameObject;
