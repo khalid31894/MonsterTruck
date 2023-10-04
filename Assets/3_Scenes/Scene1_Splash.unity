@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1543,7 +1543,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1966, y: 9}
+  m_AnchoredPosition: {x: -1965.9999, y: 9}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1395106541
@@ -1636,6 +1636,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c8b93f678e0f9444b039316d3a29049, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Delay_Time: 0
+  get_touch: 0
+  IsPlay_Count: 0
 --- !u!114 &1501309383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1648,6 +1651,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 532d3be256456f94e901fd0a6f092f9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsInitialized: 0
+  PersonlizedAds: 0
 --- !u!114 &1501309384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1673,6 +1678,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17e253c6172213d42b12e308456c5b73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TestingInEditor: 0
+  IsForFamily: 0
+  AdmobTestIds: 0
+  adCaller: {fileID: 1501309387}
+  admobAppID: 
+  bannerAdUnitIds: []
+  admobInterstial_High: ca-app-pub-4035574128336278/2547572099
+  admobInterstial_Mid: ca-app-pub-4035574128336278/2164428712
+  admobInterstial_Low: ca-app-pub-4035574128336278/5720530346
+  adsPosition: 0
+  bannerType: 1
+  showBanner: 1
+  wantToSkipFirstAd: 0
+  inAppGameObject: {fileID: 0}
+  play_Ad: 0
 --- !u!114 &1501309386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1685,6 +1705,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fabf4a1d5b47eb44f9e4609ea67c9ff4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deviceMemNeeded: 0
 --- !u!114 &1501309387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1697,6 +1718,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79849a400e997464a9301fdec4748e5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AdsType: 0
+  isSplash: 0
 --- !u!1 &1602144341
 GameObject:
   m_ObjectHideFlags: 0
