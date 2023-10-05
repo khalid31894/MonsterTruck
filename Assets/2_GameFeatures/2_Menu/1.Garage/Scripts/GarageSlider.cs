@@ -15,20 +15,7 @@ public class GarageSlider : MonoBehaviour
     
     private void OnEnable()
     {
-        //On_OpenGarage_Callback = () =>
-        //{
-        //    Debug.Log("Open");
-        //    this.gameObject.transform.DOLocalMoveY(openEndPos, time);
-        //};
-        //On_CloseGarage_Callback = () =>
-        //{
-        //    Debug.Log("Close");
-        //    this.gameObject.transform.DOLocalMoveY(closeEndPos, time);
-        //};
-
-
-
-
+     
     }
     private void OnDisable()
     {

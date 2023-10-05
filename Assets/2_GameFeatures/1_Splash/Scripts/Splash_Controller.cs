@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Splash_Controller : MonoBehaviour
 {
     [SerializeField] private GameObject PrivacyPanel;
 
-    [SerializeField] private float SplashDelay=3;
+    [SerializeField] private float SplashDelay=4;
 
 
     public GameObject splashPanel;
@@ -36,7 +37,9 @@ public class Splash_Controller : MonoBehaviour
 
     private IEnumerator ChangeScene() {
         yield return new WaitForSeconds(SplashDelay);
-        SceneLoader.LoadScene(SceneLoader.Scenes.Scene2_Menu);
+       // SceneLoader.LoadScene(SceneLoader.Scenes.Scene2_Menu);
+        SceneManager.LoadScene(nameof(SceneLoader.Scenes.Scene2_Menu));
+        
     }
 
 

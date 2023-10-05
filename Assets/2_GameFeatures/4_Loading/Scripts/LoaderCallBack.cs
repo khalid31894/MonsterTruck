@@ -29,7 +29,10 @@ public class LoaderCallBack : MonoBehaviour
         if(showMeAd)
         {
             yield return new WaitForSeconds(1.5f);
-            IntitializeAdmobAds_CB._instance.ShowAdmobInterstialAd();
+            if (IntitializeAdmobAds_CB._instance)
+            {
+                IntitializeAdmobAds_CB._instance.ShowAdmobInterstialAd();
+            }
             yield return new WaitForSeconds(1.5f);
             showMeAd = false;
             SceneLoader.LoaderCallBack();

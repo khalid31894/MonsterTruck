@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -756,27 +756,27 @@ PrefabInstance:
     - target: {fileID: 5032910845696757224, guid: 0d543fe32d4c0d147a25462823db5322,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 1.053
       objectReference: {fileID: 0}
     - target: {fileID: 5032910845696757224, guid: 0d543fe32d4c0d147a25462823db5322,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 1.053
       objectReference: {fileID: 0}
     - target: {fileID: 5032910845696757224, guid: 0d543fe32d4c0d147a25462823db5322,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 1.053
       objectReference: {fileID: 0}
     - target: {fileID: 5032910845696757224, guid: 0d543fe32d4c0d147a25462823db5322,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -952
+      value: -1028
       objectReference: {fileID: 0}
     - target: {fileID: 5032910845696757224, guid: 0d543fe32d4c0d147a25462823db5322,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 538
+      value: 576
       objectReference: {fileID: 0}
     - target: {fileID: 5032910845696757224, guid: 0d543fe32d4c0d147a25462823db5322,
         type: 3}
@@ -1432,22 +1432,22 @@ PrefabInstance:
     - target: {fileID: 2169875129331173177, guid: d6ef5b4c663f4624e924aec375e1ce37,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.8971073
+      value: 0.8653856
       objectReference: {fileID: 0}
     - target: {fileID: 2169875129331173177, guid: d6ef5b4c663f4624e924aec375e1ce37,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.8971073
+      value: 0.8653856
       objectReference: {fileID: 0}
     - target: {fileID: 2169875129331173177, guid: d6ef5b4c663f4624e924aec375e1ce37,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.8971073
+      value: 0.8653856
       objectReference: {fileID: 0}
     - target: {fileID: 2169875129331173177, guid: d6ef5b4c663f4624e924aec375e1ce37,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1273
+      value: -1210
       objectReference: {fileID: 0}
     - target: {fileID: 2169875129331173177, guid: d6ef5b4c663f4624e924aec375e1ce37,
         type: 3}
@@ -1543,7 +1543,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1965.9999, y: 9}
+  m_AnchoredPosition: {x: -1966, y: 9}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1395106541

@@ -9,6 +9,7 @@ public class Garage_Controller : MonoBehaviour
     public int currentGarage;
     public GameObject[] garages;
     public GarageSlider[] sliderArray;
+    public Garage_CarScroll[] carScrollArray;
 
     public GameObject next_btn,prev_btn;
 
@@ -34,7 +35,13 @@ public class Garage_Controller : MonoBehaviour
         {
             garage.SetActive(false);                                   //turn on Current garage (last opened garage in current session)
         }
-        garages[currentGarage].gameObject.SetActive(true);  
+        garages[currentGarage].gameObject.SetActive(true);
+
+        Invoke(nameof(openFirstGarage), CanvasLoading.delay);
+    }
+    public void openFirstGarage() {
+        sliderArray[0].transform.localPosition = new Vector3(-0.4f, -9, 0);
+        sliderArray[0].OpenGarage(); 
     }
     private void OnDisable()
     {
@@ -64,6 +71,7 @@ public class Garage_Controller : MonoBehaviour
         UpdateBtn();
         garages[currentGarage].gameObject.SetActive(true);
         Next_CanvasTransition();
+        carScrollArray[currentGarage].slideCars_CallBack();
 
     }
     public void PrevGarage_Btn() {
@@ -79,7 +87,7 @@ public class Garage_Controller : MonoBehaviour
         garages[currentGarage].gameObject.SetActive(true);
         Prev_CanvasTransition();
 
-
+        carScrollArray[currentGarage].slideCars_CallBack();
     }
 
     public void TruckSelect_Btn(int TruckNum)

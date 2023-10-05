@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class CanvasLoading : MonoBehaviour
 {
-    public float delay = 3;
+    public static float delay = 1.5f;
 
 
     public void OnEnable() 
