@@ -99,12 +99,28 @@ public class Garage_Controller : MonoBehaviour
         SoundManager.instance.PlayEffect_Instance(1);
 
         PlayerPrefsManager.SetCurrentTruck(TruckNum);
-        CanvasController.Instance.ChangeCanvas(2);
+
+        //CanvasController.Instance.ChangeCanvas(2);
+
+        StartCoroutine(CharSelectTime());
     }
 
 
 
-    public void Next_CanvasTransition()
+    public GameObject loadingPanel;
+    IEnumerator CharSelectTime()
+{
+    SoundManager.instance.PlayEffect_Instance(1);
+    loadingPanel.SetActive(true);
+    yield return new WaitForSeconds(1);
+
+
+    SceneLoader.LoadScene(SceneLoader.Scenes.Scene3_Paint);
+    //CanvasController.Instance.ChangeCanvas(3);
+}
+
+
+public void Next_CanvasTransition()
     {
         gargeParent_pos -= 1920;
        garageParent.DOLocalMoveX(gargeParent_pos, TransitionTime);

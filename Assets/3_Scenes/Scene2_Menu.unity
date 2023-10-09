@@ -27586,7 +27586,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1124881040}
   m_Layer: 5
-  m_Name: paintShiftLoading
+  m_Name: ShiftLoading
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27599,16 +27599,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1124881039}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 346118182}
   - {fileID: 1797678526}
   - {fileID: 1635937569}
   - {fileID: 1025855861}
-  m_Father: {fileID: 1687051458}
+  m_Father: {fileID: 1734796956}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -39245,7 +39245,7 @@ GameObject:
   - component: {fileID: 1687051461}
   - component: {fileID: 1687051462}
   m_Layer: 5
-  m_Name: Canvas2_Characters
+  m_Name: Canvas1_Characters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39292,7 +39292,6 @@ RectTransform:
   - {fileID: 1145707497}
   - {fileID: 1657223515}
   - {fileID: 815986307}
-  - {fileID: 1124881040}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -39352,7 +39351,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 357f5c0d1a66dca488154f375b0ac1b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadingPanel: {fileID: 1124881039}
 --- !u!114 &1687051462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40471,8 +40469,8 @@ MonoBehaviour:
   currentCanvas: 0
   canvasArray:
   - {fileID: 1849386975}
-  - {fileID: 1734796952}
   - {fileID: 1687051456}
+  - {fileID: 1734796952}
   - {fileID: 42338453}
   - {fileID: 1834392278}
   - {fileID: 1820800402}
@@ -40515,12 +40513,12 @@ GameObject:
   - component: {fileID: 1734796953}
   - component: {fileID: 1734796958}
   m_Layer: 5
-  m_Name: Canvas1_Garage
+  m_Name: Canvas2_Garage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1734796953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40599,6 +40597,7 @@ RectTransform:
   - {fileID: 517003526}
   - {fileID: 1058973773}
   - {fileID: 1076658737}
+  - {fileID: 1124881040}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -40644,6 +40643,7 @@ MonoBehaviour:
   prev_btn: {fileID: 1474583829}
   garageParent: {fileID: 1076658737}
   TransitionTime: 1
+  loadingPanel: {fileID: 1124881039}
 --- !u!114 &1734796958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55335,8 +55335,8 @@ SceneRoots:
   - {fileID: 112872832}
   - {fileID: 969860826}
   - {fileID: 1849386979}
-  - {fileID: 1734796956}
   - {fileID: 1687051458}
+  - {fileID: 1734796956}
   - {fileID: 42338455}
   - {fileID: 1834392280}
   - {fileID: 1820800407}
