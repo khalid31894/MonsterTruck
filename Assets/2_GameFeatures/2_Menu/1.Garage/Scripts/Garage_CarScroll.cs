@@ -16,18 +16,19 @@ public class Garage_CarScroll : MonoBehaviour
     public float speed = 3f;
 
     private Tween tween;
+    public float delay=1.5f;
+    //Sequence sequence;
 
-    public Action slideCars_CallBack;
-    void Start()
-    {
-        slideCars_CallBack = () => {
-            scrollRect.content.transform.localPosition = new Vector2(endPos, -10.59299f);
-            tween = scrollRect.content.transform.DOLocalMoveX(startPos, speed).SetEase(Ease.InOutCubic);
-        };
-    }
+    public Transform parentGarage;
+
+  
     private void OnEnable()
     {
         /// StartCoroutine(ScollCars()); //for first garage
+    }
+    private void Start()
+    {
+       // StartCoroutine(ScollCars());
     }
     private IEnumerator ScollCars()
     {
@@ -35,8 +36,22 @@ public class Garage_CarScroll : MonoBehaviour
         scrollRect.content.transform.localPosition = new Vector2(endPos, -10.59299f);
         tween = scrollRect.content.transform.DOLocalMoveX(startPos, speed).SetEase(Ease.InOutCubic);
     }
-    private void OnDisable()
+    
+
+    public void ScrollCars()
     {
-        tween.Kill();
+        Vector2 resetPos = new Vector2(endPos, -10.59299f);
+        Sequence sequence = DOTween.Sequence();
+
+        scrollRect.content.transform.localPosition = resetPos;
+        if (sequence != null)
+        {
+            sequence.AppendInterval(delay)
+             .Append(
+             scrollRect.content.transform.DOLocalMoveX(startPos, speed).SetEase(Ease.InOutCubic)
+            );
+
+        }
     }
+    
 }

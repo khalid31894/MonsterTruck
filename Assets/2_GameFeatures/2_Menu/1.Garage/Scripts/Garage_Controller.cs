@@ -41,7 +41,9 @@ public class Garage_Controller : MonoBehaviour
     }
     public void openFirstGarage() {
         sliderArray[0].transform.localPosition = new Vector3(-0.4f, -9, 0);
-        sliderArray[0].OpenGarage(); 
+        sliderArray[0].OpenGarage();
+        carScrollArray[currentGarage].ScrollCars();
+
     }
     private void OnDisable()
     {
@@ -71,8 +73,10 @@ public class Garage_Controller : MonoBehaviour
         UpdateBtn();
         garages[currentGarage].gameObject.SetActive(true);
         Next_CanvasTransition();
-        carScrollArray[currentGarage].slideCars_CallBack();
 
+
+
+        carScrollArray[currentGarage].ScrollCars();
     }
     public void PrevGarage_Btn() {
         SoundManager.instance.PlayEffect_Instance(1);
@@ -87,7 +91,7 @@ public class Garage_Controller : MonoBehaviour
         garages[currentGarage].gameObject.SetActive(true);
         Prev_CanvasTransition();
 
-        carScrollArray[currentGarage].slideCars_CallBack();
+        carScrollArray[currentGarage].ScrollCars();
     }
 
     public void TruckSelect_Btn(int TruckNum)
