@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Windows.Speech;
+
 
 public class AnimationController : MonoBehaviour
 {
@@ -86,6 +86,10 @@ public class AnimationController : MonoBehaviour
             animator_CAT.Play(Cat_EN_L7_4);
             yield return new WaitForSeconds(6);
             animator_CAT.Play(Cat_EN_L7_5);
+            yield return new WaitForSeconds(6);
+            animator_CAT.Play(Cat_EN_L7_11);
+            yield return new WaitForSeconds(6);
+            animator_CAT.Play(Cat_EN_L7_19);
         }
         if (PlayerPrefsManager.GetCurrentChar() == 1)
         {
@@ -99,6 +103,10 @@ public class AnimationController : MonoBehaviour
             animator_DOG.Play(Cat_EN_L7_4);
             yield return new WaitForSeconds(6);
             animator_DOG.Play(Cat_EN_L7_5);
+            yield return new WaitForSeconds(6);
+            animator_DOG.Play(Cat_EN_L7_11);
+            yield return new WaitForSeconds(6);
+            animator_DOG.Play(Cat_EN_L7_19);
         }
         if (PlayerPrefsManager.GetCurrentChar() == 3)
         {
@@ -112,6 +120,10 @@ public class AnimationController : MonoBehaviour
             animator_HORSE.Play(Cat_EN_L7_4);
             yield return new WaitForSeconds(6);
             animator_HORSE.Play(Cat_EN_L7_5);
+            yield return new WaitForSeconds(6);
+            animator_HORSE.Play(Cat_EN_L7_11);
+            yield return new WaitForSeconds(6);
+            animator_HORSE.Play(Cat_EN_L7_19);
         }
     }
 

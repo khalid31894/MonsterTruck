@@ -6,14 +6,12 @@ public class AnimatorHandler : MonoBehaviour
 {
     public static AnimatorHandler Instance;
     public Animator Player;
+    public bool idle = true;
     private void OnEnable()
     {
         Instance = this;
         Player = GetComponentInChildren<Animator>();
-        //var ch = Player.transform.GetChild(0).GetChild(1).GetChild(0).gameObject;
-        //ch.gameObject.AddComponent<BoxCollider2D>().isTrigger = true;
-        //ch.gameObject.AddComponent<Rigidbody2D>().bodyType=RigidbodyType2D.Kinematic;
-        //ch.AddComponent<CharacterFace>();
+  
 
     }
     public void SetIdle()
@@ -22,28 +20,26 @@ public class AnimatorHandler : MonoBehaviour
         {
             idle = true;
          //   print("Idle");
-            Player.Play("idle");
+            Player.Play("CarSmiling");
         }
     }
     public void PlayLanded()
     {
         SoundManager.instance.PlayBetween(46,48);
         idle = false;
-        Player.Play("Landed");
+        Player.Play("CarSurprised");
         Invoke(nameof(SetIdle), 2);
     }
-    public bool idle = true;
     public void PlaySmile()
     {
         if (idle)
         {
            SoundManager.instance.PlayBetween(33,46);
-           // print("smile");         
             idle = false;
-            int smileIndex = Random.Range(1, 4);
-            Player.Play(smileIndex.ToString(),0);
-            //AnimatorStateInfo stateInfo = Player.GetCurrentAnimatorStateInfo(0);
-            //float clipTime = stateInfo.normalizedTime * stateInfo.length;
+           // int smileIndex = Random.Range(1, 4);
+          //  Player.Play(smileIndex.ToString(),0);
+
+            Player.Play("CarHappy");
             Invoke(nameof(SetIdle), 1.5f);
         }
     }
@@ -53,7 +49,7 @@ public class AnimatorHandler : MonoBehaviour
         {
            SoundManager.instance.PlayBetween(48, 53);
             idle = false;
-            Player.Play("Confuse");
+            Player.Play("CarSurprised");
             Invoke(nameof(SetIdle), 1.5f);
         }
     }
@@ -62,7 +58,7 @@ public class AnimatorHandler : MonoBehaviour
         if (idle)
         {         
             idle = false;
-            Player.Play("CarBack");
+            Player.Play("CarHappyNoBlink");
             Invoke(nameof(SetIdle), 1.5f);
         }
     }
@@ -71,13 +67,14 @@ public class AnimatorHandler : MonoBehaviour
         if (idle)
         {
             idle = false;
-            Player.Play("CarBack");
+            Player.Play("CarHappyNoBlink");
         }
     }
     public void Win()
     {
-        int smileIndex = Random.Range(1, 4);
-        Player.Play(smileIndex.ToString(), 0);
+        // int smileIndex = Random.Range(1, 4);
+        // Player.Play(smileIndex.ToString(), 0);
+        Player.Play("CarSmiling");
     }
 
 }

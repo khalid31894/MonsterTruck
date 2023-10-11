@@ -11,24 +11,20 @@ using System;
 
 namespace IndieStudio.DrawingAndColoring.Logic
 {
-    [System.Serializable]
-    public class Characters
-    {
-        public List<GameObject> Character;
-    }
+    //[System.Serializable]
+    //public class Characters
+    //{
+    //    public List<GameObject> Character;
+    //}
     [DisallowMultipleComponent]
     public class ShapesCanvas : MonoBehaviour
     {
         public static ShapesCanvas instance;
-        public List<Characters> Characters;
-        /// <summary>
-        /// The shapes container.
-        /// </summary>
+        public List<Transform> Characters;
+ 
         public Transform shapesContainer;
 
-        /// <summary>
-        /// The shape order.
-        /// </summary>
+ 
         public static Text shapeOrder;
         public float CarScale;
 
@@ -38,11 +34,7 @@ namespace IndieStudio.DrawingAndColoring.Logic
             if (instance == null)
             {
                 instance = this;
-                //DontDestroyOnLoad(gameObject);
-
-                //SetShapeOrderReference();
-
-                //Instantiate the shapes
+              
                 InstantiateShapes();
             }
             else
@@ -60,20 +52,7 @@ namespace IndieStudio.DrawingAndColoring.Logic
             }
         }
 
-        /// <summary>
-        /// Set the shape order reference.
-        /// </summary>
-        //private static void SetShapeOrderReference()
-        //{
-        //    if (shapeOrder == null)
-        //    {
-        //        shapeOrder = GameObject.Find("ShapeOrder").GetComponent<Text>();
-        //    }
-        //}
-
-        /// <summary>
-        /// Instantiate the shapes.
-        /// </summary>
+        
         public void InstantiateShapes()
         {
             if (Car_Handler.instance == null)
@@ -85,33 +64,13 @@ namespace IndieStudio.DrawingAndColoring.Logic
                     return;
                 }
 
-                //if (ShapesManager.instance.shapes.Count == 0)
-                //{
-                //    Debug.LogWarning("No Shapes Found in the list");
-                //}
-
-                //Destroy all shapes in the shapesContainer
-                //foreach (Transform child in shapesContainer)
-                //{
-                //    Destroy(child.gameObject);
-                //}
-
+               
                 RectTransform rectTransform;
                 Transform transform;
 
-
-                //for (int i = 0; i < ShapesManager.instance.shapes.Count; i++)
-                //{
-                // int i = ShapesManager.instance.lastSelectedShape;
-
-                //if (ShapesManager.instance.shapes[i] == null)
-                //{
-                //    continue;
-                //}
-                //string Selected_Car = PlayerPrefsManager.GetCurrentTruck().ToString(); ;//"48"/*PlayerPrefs.GetString("Car_Resource")*/;
-                string Car_name = PlayerPrefsManager.GetCurrentTruck().ToString(); //"48"/*PlayerPrefs.GetString("Selected_Car")*/;
+                string Car_name = PlayerPrefsManager.GetCurrentTruck().ToString(); 
                 GameObject shape = null;
-                //print(Car_name);
+                
                 if (int.Parse(Car_name) <= 8)
                 {
                     shape = Instantiate(Resources.Load("Car/CakeLand_Trucks/" + Car_name), Vector3.zero, Quaternion.identity) as GameObject;
@@ -136,36 +95,44 @@ namespace IndieStudio.DrawingAndColoring.Logic
                 {
                     shape = Instantiate(Resources.Load("Car/RobotWorld_Trucks/" + Car_name), Vector3.zero, Quaternion.identity) as GameObject;
                 }
-                //GameObject shape = Instantiate(ShapesManager.instance.shapes[i].gamePrefab, Vector3.zero, Quaternion.identity) as GameObject;
+               
 
 
                 CarScale = shape.GetComponent<Car_Handler>().CarScale;
                 shape.GetComponent<Car_Handler>().PreviousP = GetComponent<ShapesCanvas>();
-                //shape.name = ShapesManager.instance.shapes[i].gamePrefab.name;//set the name of the shape
-                //if (shape.name == "FreeArea")
-                //{//Hide Free Area image
-                //    shape.GetComponent<Image>().enabled = false;
-                //}
+             
                 shape.transform.SetParent(shapesContainer);//set the parent of the shape
                 rectTransform = shape.GetComponent<RectTransform>();//get RectTransform component
                 transform = shape.GetComponent<Transform>();
                 rectTransform.anchoredPosition3D = Vector3.zero;//reset anchor position
-                //rectTransform.offsetMax = rectTransform.offsetMin = Vector2.zero;//reset offset
-                //shape.transform.localScale = Vector3.one;//reset the scale to (1,1,1)
-                shape.transform.localScale = new Vector3(CarScale, CarScale, CarScale);//reset the scale to (1,1,1)
-                var p = shape.transform.GetChild(0).GetChild(0);
-                if (p.name == "Driver")
-                {
-                    int selectedMode = PlayerPrefs.GetInt("SelectedGarage");
-                    int selectedCharacter = PlayerPrefs.GetInt("SelectedCharacter");
-                    var c = Instantiate(Characters[selectedCharacter].Character[selectedMode], p);
-                    c.gameObject.AddComponent<AnimatorHandler>();
-                }
+                
+
+                SetDriver(shape);
+
+
                 shape.SetActive(true);//disable the shape
-                //ShapesManager.instance.shapes[i].gamePrefab = shape;
-                //}
+                
             }
         }
+
+        private void SetDriver(GameObject shape  )
+        {
+            shape.transform.localScale = new Vector3(CarScale, CarScale, CarScale);//reset the scale to (1,1,1)
+
+            var p = shape.transform.GetChild(0).GetChild(0);
+            if (p.name == "Driver")
+            {
+                //int selectedMode = PlayerPrefs.GetInt("SelectedGarage");
+                //int selectedCharacter = PlayerPrefs.GetInt("SelectedCharacter");
+                int selectedCharacter = PlayerPrefsManager.GetCurrentChar();
+               
+                // var c = Instantiate(Characters[selectedCharacter].Character[selectedMode], p);
+                var c = Instantiate(Characters[selectedCharacter-1], p);
+                c.gameObject.AddComponent<AnimatorHandler>();
+            }
+
+        }
+
         public void SetP(GameObject shape)
         {
             foreach (Rigidbody2D item in Car_Handler.instance.rigidComponent)
@@ -188,14 +155,13 @@ namespace IndieStudio.DrawingAndColoring.Logic
             rectTransform.anchoredPosition = new Vector2(0, -75f);
             shape.transform.GetChild(0).transform.localPosition= Vector3.zero;
             shape.transform.GetChild(0).transform.localRotation= Quaternion.identity;
-            //shape.transform.localScale = new Vector3(CarScale, CarScale, CarScale);//reset the scale to (1,1,1)
             shape.GetComponent<Car_Handler>().rawData.renderCam.clearFlags = CameraClearFlags.Skybox;
             shapes = shape;
-           // shape.transform.GetChild(0).GetComponent<CarController>().forward = false;
-         //   shape.transform.GetChild(0).GetComponent<CarController>().backward = false;
+ 
             AnimatorHandler.Instance.idle = true;
 
             StartCoroutine(renewRigid());
+
         }
         GameObject shapes;
         IEnumerator  renewRigid()
