@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Analytics;
 using UnityEngine.SceneManagement;
-//using UnityEngine.Purchasing;
+using UnityEngine.Purchasing;
 
 public class AssignAdIds_CB : MonoBehaviour
 {
@@ -27,13 +27,13 @@ public class AssignAdIds_CB : MonoBehaviour
     public BannerType bannerType = BannerType.Simple_Banner;
     public ShowBannerEnum showBanner = ShowBannerEnum.showBanner;
     public bool wantToSkipFirstAd = false;
-    //[Header("Unity InApp Define")]
-    //public InAppKeys[] InAppIds;
-    //public static InAppKeys[] keys;
+    [Header("Unity InApp Define")]
+    public InAppKeys[] InAppIds;
+    public static InAppKeys[] keys;
     public GameObject inAppGameObject;
     public static GameObject inappObj;
     [HideInInspector]
-    //public unityInAppPurchase_CB IAP;
+    public unityInAppPurchase_CB IAP;
 
 
     void Awake()
@@ -55,9 +55,9 @@ public class AssignAdIds_CB : MonoBehaviour
 #if UNITY_ANDROID || UNITY_EDITOR
             // rates_us = rates_us = "https://play.google.com/store/apps/details?id=" + Application.identifier;
 #endif
-            //keys = InAppIds;
-            //inappObj = inAppGameObject;
-            //IAP = inappObj.GetComponent<unityInAppPurchase_CB>();
+            keys = InAppIds;
+            inappObj = inAppGameObject;
+            IAP = inappObj.GetComponent<unityInAppPurchase_CB>();
             StartCoroutine(CallForUpdateAdIds());
         }
         catch (Exception ex)
@@ -212,85 +212,85 @@ public class AssignAdIds_CB : MonoBehaviour
         yield return new WaitForSecondsRealtime(3f);
         // UpdateAdIds();
     }
-    //#region Call Back for In-Apps
-    //public static void AfterPurchased(int value)
-    //{
-    //    try
-    //    {
-    //        if (keys[value].purchaseType == PurchaseType.Remove_Ads)
-    //        {
-    //            print("remove Ads");
-    //            PlayerPrefs.SetInt("RemoveAds", 1);
-    //            GC.Collect();
-    //            Resources.UnloadUnusedAssets();
-    //            SceneManager.LoadScene("Car_Garage");
-    //        }
+    #region Call Back for In-Apps
+    public static void AfterPurchased(int value)
+    {
+        try
+        {
+            if (keys[value].purchaseType == PurchaseType.Remove_Ads)
+            {
+                print("remove Ads");
+                PlayerPrefs.SetInt("RemoveAds", 1);
+                GC.Collect();
+                Resources.UnloadUnusedAssets();
+                SceneManager.LoadScene(unityInAppPurchase_CB.levelName);
+            }
 
-    //        else if (keys[value].purchaseType == PurchaseType.Unlock_All)
-    //        {
-    //            print("UnlockALL Ads");
-    //            PlayerPrefs.SetInt("RemoveAds", 1);
-    //            PlayerPrefs.SetInt("unlockall", 1);
-    //            PlayerPrefs.SetInt("8Hour", 1);
-    //            PlayerPrefs.SetInt("24Hour", 1);
-    //            PlayerPrefs.SetInt("72Hour", 1);
-    //            PlayerPrefs.SetInt("120Hour", 1);
-    //            GC.Collect();
-    //            Resources.UnloadUnusedAssets();
-    //            SceneManager.LoadScene("Car_Garage");
-    //        }
+            else if (keys[value].purchaseType == PurchaseType.Unlock_All)
+            {
+                print("UnlockALL Ads");
+                PlayerPrefs.SetInt("RemoveAds", 1);
+                PlayerPrefs.SetInt("unlockall", 1);
+                PlayerPrefs.SetInt("8Hour", 1);
+                PlayerPrefs.SetInt("24Hour", 1);
+                PlayerPrefs.SetInt("72Hour", 1);
+                PlayerPrefs.SetInt("120Hour", 1);
+                GC.Collect();
+                Resources.UnloadUnusedAssets();
+                SceneManager.LoadScene(unityInAppPurchase_CB.levelName);
+            }
 
-    //        else if (keys[value].purchaseType == PurchaseType.Scene_Unlock)
-    //        {
-    //            GC.Collect();
-    //            Resources.UnloadUnusedAssets();
-    //            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    //        }
-    //        else if (keys[value].purchaseType == PurchaseType.BundleUnlock)
-    //        {
-    //            GC.Collect();
-    //            Resources.UnloadUnusedAssets();
-    //            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    //        }
-    //        else if (keys[value].purchaseType == PurchaseType.Add_Coins)
-    //        {
-    //            Debug.Log("In-App for coins will add here, Add your coins. After Add coins remove this text.");
-    //        }
-    //    }
-    //    catch (Exception ex)
-    //    {
-    //        GeneralScript._instance.SendExceptionEmail(ex.Message.ToString());
-    //    }
-    //}
-    //#endregion
+            else if (keys[value].purchaseType == PurchaseType.Scene_Unlock)
+            {
+                GC.Collect();
+                Resources.UnloadUnusedAssets();
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+            else if (keys[value].purchaseType == PurchaseType.BundleUnlock)
+            {
+                GC.Collect();
+                Resources.UnloadUnusedAssets();
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+            else if (keys[value].purchaseType == PurchaseType.Add_Coins)
+            {
+                Debug.Log("In-App for coins will add here, Add your coins. After Add coins remove this text.");
+            }
+        }
+        catch (Exception ex)
+        {
+            //GeneralScript._instance.SendExceptionEmail(ex.Message.ToString());
+        }
+    }
+    #endregion
 
 }
-//[System.Serializable]
-//public class InAppKeys
-//{
-//    public string Id;
-//    public ProductType productType;
-//    public PurchaseType purchaseType = PurchaseType.Remove_Ads;
-//    public string priceInDollars;
-//    //public string localizedPrice;
+[System.Serializable]
+public class InAppKeys
+{
+    public string Id;
+    public ProductType productType;
+    public PurchaseType purchaseType = PurchaseType.Remove_Ads;
+    public string priceInDollars;
+    //public string localizedPrice;
 
-//    [DrawIf("purchaseType", PurchaseType.Scene_Unlock)]
-//    public string levelObjName;
-//    [DrawIf("purchaseType", PurchaseType.Add_Coins)]
-//    public int NumberOfCoins;
-//    [DrawIf("purchaseType", PurchaseType.BundleUnlock)]
-//    public string[] objectsNamesList;
+    //[DrawIf("purchaseType", PurchaseType.Scene_Unlock)]
+    public string levelObjName;
+   // [DrawIf("purchaseType", PurchaseType.Add_Coins)]
+    public int NumberOfCoins;
+   //    [DrawIf("purchaseType", PurchaseType.BundleUnlock)]
+    public string[] objectsNamesList;
 
 
-//    public InAppKeys(string idOfInApp, ProductType productType, PurchaseType purchaseType, string priceInDollar)
-//    {
-//        Id = idOfInApp;
-//        this.productType = productType;
-//        this.purchaseType = purchaseType;
-//        this.priceInDollars = priceInDollar;
-//    }
+    public InAppKeys(string idOfInApp, ProductType productType, PurchaseType purchaseType, string priceInDollar)
+    {
+        Id = idOfInApp;
+        this.productType = productType;
+        this.purchaseType = purchaseType;
+        this.priceInDollars = priceInDollar;
+    }
 
-//}
+}
 
 
 public enum BannerType
@@ -300,14 +300,14 @@ public enum BannerType
     Adaptive_Banner = 3
 }
 
-//public enum PurchaseType
-//{
-//    Remove_Ads,
-//    Unlock_All,
-//    Add_Coins,
-//    Scene_Unlock,
-//    BundleUnlock,
-//}
+public enum PurchaseType
+{
+    Remove_Ads,
+    Unlock_All,
+    Add_Coins,
+    Scene_Unlock,
+    BundleUnlock,
+}
 
 public enum ShowBannerEnum
 {

@@ -215,23 +215,25 @@ public class IntitializeAdmobAds_CB : MonoBehaviour
     public void ShowAdmobInterstialAd()
     {
         AssignAdIds_CB.instance.play_Ad = false;
-        if (interstitialHigh.IsLoaded())
+        if (PlayerPrefs.GetInt("RemoveAds") == 0)
         {
-            interstitialHigh.Show();
+            if (interstitialHigh.IsLoaded())
+            {
+                interstitialHigh.Show();
 
+            }
+            else if (interstitialMid.IsLoaded())
+            {
+                RequestAdmobInterstitialHigh();
+                interstitialMid.Show();
+            }
+            else if (interstitialLow.IsLoaded())
+            {
+                RequestAdmobInterstitialHigh();
+                RequestAdmobInterstitialMedium();
+                interstitialLow.Show();
+            }
         }
-        else if (interstitialMid.IsLoaded())
-        {
-            RequestAdmobInterstitialHigh();
-            interstitialMid.Show();
-        }
-        else if (interstitialLow.IsLoaded())
-        {
-            RequestAdmobInterstitialHigh();
-            RequestAdmobInterstitialMedium();
-            interstitialLow.Show();
-        }
-
     }
 
     [Obsolete]

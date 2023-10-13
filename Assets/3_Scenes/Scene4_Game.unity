@@ -495,7 +495,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startDelay: 0.03
   targetTag: Player
-  position: {x: 0.5, y: 0.12}
+  position: {x: 0.5, y: 0.25}
   carController: {fileID: 0}
   Camera: {fileID: 550845925}
   MaxOrthoSize: 50
@@ -610,7 +610,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 100, y: -100}
-  m_SizeDelta: {x: 150, y: 150}
+  m_SizeDelta: {x: 120, y: 120}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &609361438
 MonoBehaviour:
@@ -1483,7 +1483,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -100, y: -100}
-  m_SizeDelta: {x: 150, y: 150}
+  m_SizeDelta: {x: 120, y: 120}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1960566131
 MonoBehaviour:

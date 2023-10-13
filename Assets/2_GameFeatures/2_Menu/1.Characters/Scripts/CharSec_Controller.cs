@@ -10,7 +10,7 @@ public class CharSec_Controller : MonoBehaviour
 
     public void Home_Btn()
     {
-        CanvasController.Instance.ChangeCanvas(1);
+        CanvasController.Instance.ChangeCanvas(0);
 
     }
 

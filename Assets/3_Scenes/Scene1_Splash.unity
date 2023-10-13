@@ -1682,16 +1682,25 @@ MonoBehaviour:
   IsForFamily: 0
   AdmobTestIds: 0
   adCaller: {fileID: 1501309387}
-  admobAppID: 
+  admobAppID: ca-app-pub-4035574128336278~9360107043
   bannerAdUnitIds: []
   admobInterstial_High: ca-app-pub-4035574128336278/2547572099
   admobInterstial_Mid: ca-app-pub-4035574128336278/2164428712
   admobInterstial_Low: ca-app-pub-4035574128336278/5720530346
   adsPosition: 0
-  bannerType: 1
+  bannerType: 3
   showBanner: 1
   wantToSkipFirstAd: 0
-  inAppGameObject: {fileID: 0}
+  InAppIds:
+  - Id: remove_ads
+    productType: 1
+    purchaseType: 0
+    priceInDollars: $2.99
+    levelObjName: 
+    NumberOfCoins: 0
+    objectsNamesList: []
+  inAppGameObject: {fileID: 1943225825}
+  IAP: {fileID: 0}
   play_Ad: 0
 --- !u!114 &1501309386
 MonoBehaviour:
@@ -2125,6 +2134,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1943225826}
+  - component: {fileID: 1943225827}
   m_Layer: 0
   m_Name: InApps
   m_TagString: Untagged
@@ -2147,6 +2157,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1501309381}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1943225827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1943225825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dc51297642b5bd4fb6dc998eda5ca10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2083226098
 GameObject:
   m_ObjectHideFlags: 0

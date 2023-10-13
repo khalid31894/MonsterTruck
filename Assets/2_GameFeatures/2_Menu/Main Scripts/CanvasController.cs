@@ -32,6 +32,11 @@ public class CanvasController : MonoBehaviour
     private void Awake()
     {
         // Ensure there's only one instance
+        if (PlayerPrefs.GetInt("RemoveAds") == 1)
+        {
+            
+            foreach(GameObject obj in removeAdsBtn) { obj.SetActive(false); }
+        }
         if (instance != null && instance != this)
         {
             Destroy(gameObject);
@@ -49,7 +54,7 @@ public class CanvasController : MonoBehaviour
     public static Action <int> On_CanvasChanger_CallBack;
 
     public static  int SetCanvasNumber;
-
+    public GameObject [] removeAdsBtn;
 
 
     public void ChangeCanvas( int canvasNumber)  //Applied on All Btns which change panels

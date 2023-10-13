@@ -206,6 +206,7 @@ public class CarController : MonoBehaviour
             // Moving forward
             if (!finishGateReached)
             {
+                //if (Grounded.IsGrounded) { }
                 if (motorBack[0].motorSpeed > Mathf.Abs(1f) && forward && backward && Grounded.IsGrounded)
                 {
                     StopCar();

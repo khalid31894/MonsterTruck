@@ -9,15 +9,11 @@ public class Splash_Controller : MonoBehaviour
 
     [SerializeField] private float SplashDelay=4;
 
-
     public GameObject splashPanel;
-
 
     void Start()
     {
         CanShowPrivacyPanel();
-
-
     }
 
     

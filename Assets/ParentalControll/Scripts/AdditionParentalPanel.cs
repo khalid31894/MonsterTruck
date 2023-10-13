@@ -71,6 +71,7 @@ public class AdditionParentalPanel : MonoBehaviour
 
         if (answer == val)
         {
+            
             //print("Correct ");
             //soundref.instance.PlaySnd(soundref.instance.correct);
             //print("inapvalie:" + inappval);
@@ -89,6 +90,7 @@ public class AdditionParentalPanel : MonoBehaviour
             {
                 if (activeObject)
                 {
+                 //   TurnOnGO();
                     activeObject.SetActive(true);
                 //    AssignAdIds_CB.instance.HideBanner();
                 }
@@ -109,6 +111,7 @@ public class AdditionParentalPanel : MonoBehaviour
         else
         {
             print("No Correct");
+           // TurnOffGO();
             //ToastMessage.Instance.ShowToastMessage("Wrong Answer!");
         }
         //IsLocked.instance.Panel.Play("OpenPanelIdle");
@@ -124,4 +127,20 @@ public class AdditionParentalPanel : MonoBehaviour
     {
         ParentPanelState = status;
     }
+
+
+
+    //public GameObject[] turnOff; 
+    //public void TurnOffGO() {
+    //    foreach (GameObject obj in turnOff) { obj.SetActive(false); }
+    //}
+    //public void TurnOnGO()
+    //{
+    //    foreach (GameObject obj in turnOff) { obj.SetActive(true); }
+    //}
+
+
+
+
+
 }

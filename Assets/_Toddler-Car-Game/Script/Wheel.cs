@@ -1,20 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Dreamteck;
-using Dreamteck.Splines;
+//using Dreamteck;
+//using Dreamteck.Splines;
 using UnityEngine.Experimental.Playables;
 using DG.Tweening;
 
 public class Wheel : MonoBehaviour
 {
-    SplineComputer spline;
+    //SplineComputer spline;
     CarController CC;
     public float speed = 10;
     public GameObject StartP,EndP;
     private void Start()
     {
-        spline=transform.GetComponentInParent<SplineComputer>();
+      //  spline=transform.GetComponentInParent<SplineComputer>();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -28,16 +28,16 @@ public class Wheel : MonoBehaviour
             float speed = Car_Handler.instance.controller.GetComponent<Rigidbody2D>().velocity.magnitude;
             
             v.transform.parent.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
-            v.transform.parent.gameObject.AddComponent<SplineFollower>();
-            SplineFollower s= v.transform.GetComponentInParent<SplineFollower>();
-            s.updateMethod=SplineUser.UpdateMethod.FixedUpdate;
-            s.spline = spline;
-            s.motion.is2D= true;
+           // v.transform.parent.gameObject.AddComponent<SplineFollower>();
+            //SplineFollower s= v.transform.GetComponentInParent<SplineFollower>();
+           // s.updateMethod=SplineUser.UpdateMethod.FixedUpdate;
+           // s.spline = spline;
+           // s.motion.is2D= true;
             //s.followSpeed = 25;
             print("speed " + speed);
-            s.followSpeed = speed;
+          //  s.followSpeed = speed;
            
-            s.useTriggers   = true;
+          //  s.useTriggers   = true;
             //s.triggerGroup = 1;
             EndP.SetActive(true);
             gameObject.SetActive(false) ;
@@ -74,7 +74,7 @@ public class Wheel : MonoBehaviour
         v.transform.parent.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
         CC = v.GetComponentInParent<CarController>();
         CC.GetComponent<Rigidbody2D>().AddForce(new Vector2(x, y), ForceMode2D.Impulse);
-        Destroy(v.transform.parent.gameObject.GetComponent<SplineFollower>());
+      //  Destroy(v.transform.parent.gameObject.GetComponent<SplineFollower>());
     } 
     public void addSpeedBoost()
     {

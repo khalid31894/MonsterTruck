@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SplashUI_Controller : MonoBehaviour
 {
@@ -24,7 +25,9 @@ public class SplashUI_Controller : MonoBehaviour
 
         yield return new WaitForSeconds(3);
         PlayerPrefsManager.SetPrivacySplash(true);
-        SceneLoader.LoadScene(SceneLoader.Scenes.Scene2_Menu);
+       // SceneLoader.LoadScene(SceneLoader.Scenes.Scene2_Menu);
+        SceneManager.LoadScene(nameof(SceneLoader.Scenes.Scene2_Menu));
+
     }
 
 

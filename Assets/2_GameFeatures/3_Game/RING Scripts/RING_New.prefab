@@ -389,14 +389,15 @@ EdgeCollider2D:
   - {x: 9.762488, y: 9.216262}
   - {x: 9.579398, y: 9.707735}
   - {x: 9.297035, y: 10.245734}
-  - {x: 8.790775, y: 11.033043}
-  - {x: 8.398321, y: 11.477541}
-  - {x: 7.7825184, y: 12.075625}
+  - {x: 8.80717, y: 11.044554}
+  - {x: 8.431301, y: 11.489465}
+  - {x: 7.8240356, y: 12.113847}
   - {x: 7.2923794, y: 12.467224}
-  - {x: 6.4006057, y: 12.951772}
-  - {x: 5.9152837, y: 13.167673}
-  - {x: 4.6917906, y: 13.509679}
-  - {x: 3.5872526, y: 13.605396}
+  - {x: 6.691829, y: 12.871933}
+  - {x: 6.424562, y: 13.008291}
+  - {x: 5.959905, y: 13.214539}
+  - {x: 4.705211, y: 13.558662}
+  - {x: 3.5423267, y: 13.652929}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -1267,4 +1268,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d4a29c9b1721e74c94a0ff2bc99d11d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  initialCamY: 0.25
+  targetCamY: 0.45
+  targetFOV: 74
+  initialFOV: 60
+  transitionDuration: 1.5
   controller_Ring: {fileID: 7987380714364441995}

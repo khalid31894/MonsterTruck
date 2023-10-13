@@ -31,22 +31,19 @@ public class splash : MonoBehaviour
         }
         else if (aspect == 2.09 || aspect == 1.78 || (aspect >= 1.7f && aspect < 1.8f))
         {
-            Debug.Log("small: " + aspect);
-           
+            Debug.Log("small: " + aspect);  
             smallScreen.SetActive(true);
         }
         else if(aspect>2)
         {
             Debug.Log("Large: " + aspect);
             laregeScreen.SetActive(true);
-
         }
         else
         {
             Debug.Log("Else: " + aspect);
             laregeScreen.SetActive(true);
         }
-      
         yield return null;
     }
     
